@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import ParentView from '../debug/css/selector/before/SelBeforeTest'
+import ParentView from '../debug/css/selector/mouse/actions/SelActionsCompare'
 
 export default {
   name: 'Home',
