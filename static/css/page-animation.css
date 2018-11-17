@@ -1,0 +1,66 @@
+/*
+  transform page animation
+ */
+/* right-in-right-out */
+.right-in-right-out-enter-active, .right-in-right-out-leave-active {
+  transition: all .4s;
+}
+
+.right-in-right-out-enter, .right-in-right-out-leave-active {
+  transform: translate3d(100%, 0, 0);
+  /*opacity: 0;*/
+}
+
+/* left-in-left-out */
+.left-in-left-out-enter-active, .left-in-left-out-leave-active {
+  transition: all .4s;
+}
+
+.left-in-left-out-enter, .left-in-left-out-leave-active {
+  transform: translate3d(-100%, 0, 0);
+}
+
+/* left-in-right-out */
+.left-in-right-out-enter-active, .left-in-right-out-leave-active {
+  transition: all .4s;
+}
+
+.left-in-right-out-enter {
+  transform: translate3d(-100%, 0, 0);
+}
+
+.left-in-right-out-leave-active {
+  transform: translate3d(100%, 0, 0);
+}
+
+/* right-in-left-out */
+.right-in-left-out-enter-active, .right-in-left-out-leave-active {
+  transition: all .4s;
+}
+
+.right-in-left-out-enter {
+  transform: translate3d(100%, 0, 0);
+}
+
+.right-in-left-out-leave-active {
+  transform: translate3d(-100%, 0, 0);
+}
+
+/* right-in */
+.right-in-enter-active {
+  transition: all .4s;
+}
+
+.right-in-enter {
+  transform: translate3d(100%, 0, 0);
+}
+
+/* left-in */
+.left-in-enter-active {
+  transition: all .4s;
+}
+
+.left-in-enter {
+  transform: translate3d(-100%, 0, 0);
+}
+
