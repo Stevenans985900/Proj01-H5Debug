@@ -1,16 +1,21 @@
 <template>
   <div>Home
-    <ParentView></ParentView>
+    <VwAdaptTest/>
+    <!--<PercentAdapt/>-->
+    <!--<RemAdaptTest/>-->
     <!--<router-view />-->
   </div>
 </template>
 
 <script>
-import ParentView from '../debug/css/selector/mouse/actions/SelActionsCompare'
+import EventBaseTest from '../debug/javascript/event/base/EventBaseTest'
+import VwAdaptTest from '../debug/css/solution/screen/vw/VwAdaptTest'
+import PercentAdapt from '../debug/css/solution/screen/percent/PercentAdapt'
+import RemAdaptTest from '../debug/css/solution/screen/rem/RemAdaptTest'
 
 export default {
   name: 'Home',
-  components: {ParentView},
+  components: {RemAdaptTest, PercentAdapt, VwAdaptTest, EventBaseTest},
   mounted: function () {
     console.log('mounted')
   },

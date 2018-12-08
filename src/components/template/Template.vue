@@ -1,20 +1,24 @@
 <template>
-  <div class="zz-page">{{name}}</div>
+  <div class="zz-page">{{title}}</div>
 </template>
 
 <script>
 export default {
   name: 'Template',
+  components: {},
   data () {
     return {
-      name: 'template component'
+      title: 'template component'
     }
   },
   methods: {
-    calc (vA, vB) {
-      return vA + vB
+    calc (params) {
+      return params
     }
   },
+  /**
+   * template
+   */
   mounted: function () {
     console.log('mounted')
   },
