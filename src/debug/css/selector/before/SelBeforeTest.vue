@@ -2,6 +2,7 @@
   <div class="zz-page">
     <div class="sbt-div-sty01">Css before selector1</div>
     <div class="sbt-div-sty02">Css before selector2</div>
+    <div class="sbt-div-sty03">Css before selector3</div>
   </div>
 </template>
 
@@ -68,6 +69,31 @@ export default {
     left: 3px;
     background: #9EEA6A;
     content: "";
+    opacity: 0.5;
+  }
+
+  .sbt-div-sty03 {
+    height: 25px;
+    padding: 10px;
+    margin-left: 20px;
+    line-height: 25px;
+    font-size: 20px;
+    color: goldenrod;
+  }
+
+  .sbt-div-sty03:before {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    left: 3px;
+    content: "11";
+    background: url("/static/logo/logo.png") no-repeat;
+    /*background-image: url("/static/logo/logo.png");*/
+    background-size: 26px 26px;
+    /*background-size: 100% 100%;*/
+    /*background-size: 100%;*/
+    vertical-align:middle;
     opacity: 0.5;
   }
 </style>
