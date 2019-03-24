@@ -17,13 +17,10 @@ export default {
     }
   },
   /**
-   * template
+   * 前端H5tech栈简化模板
    */
   mounted: function () {
     console.log('mounted')
-  },
-  destroyed: function () {
-    // console.log('destroyed')
   }
 }
 </script>
