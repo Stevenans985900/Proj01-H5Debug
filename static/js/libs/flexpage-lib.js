@@ -4,7 +4,7 @@
  * 10.80
  */
 (function flexPage (window, document) {
-  let remSum = 10.80
+  let remSum = 10.8
 
   function adjustFontRem (ev) {
     console.log('adjustFontRem ' + ev)

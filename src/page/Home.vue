@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <H5Super/>
+  <div class="zz-page">
+    <RemAdaptTest/>
+    <!--<H5Super/>-->
   </div>
 </template>
 
@@ -8,10 +9,11 @@
 import VwAdaptTest from '../debug/css/solution/screen/vw/VwAdaptTest'
 import RemAdaptTest from '../debug/css/solution/screen/rem/RemAdaptTest'
 import H5Super from '../debug/0/H5Super'
+import IframeTest from '../debug/html/label/iframe/IframeTest'
 
 export default {
   name: 'Home',
-  components: {H5Super, RemAdaptTest, VwAdaptTest},
+  components: {IframeTest, H5Super, RemAdaptTest, VwAdaptTest},
   /**
    * http://localhost:8800/#/
    * http://localhost:8800/#/home

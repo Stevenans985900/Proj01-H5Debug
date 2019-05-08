@@ -43,6 +43,7 @@ export default {
    */
   mounted: function () {
     console.log('mounted')
+    console.log(_test)
   }
 }
 const _test = {
