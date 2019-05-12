@@ -1,19 +1,16 @@
 <template>
   <div class="zz-page">
-    <RemAdaptTest/>
+    <DivElementProps/>
     <!--<H5Super/>-->
   </div>
 </template>
 
 <script>
-import VwAdaptTest from '../debug/css/solution/screen/vw/VwAdaptTest'
-import RemAdaptTest from '../debug/css/solution/screen/rem/RemAdaptTest'
-import H5Super from '../debug/0/H5Super'
-import IframeTest from '../debug/html/label/iframe/IframeTest'
+import DivElementProps from '../debug/html/label/div/DivElementProps'
 
 export default {
   name: 'Home',
-  components: {IframeTest, H5Super, RemAdaptTest, VwAdaptTest},
+  components: {DivElementProps},
   /**
    * http://localhost:8800/#/
    * http://localhost:8800/#/home
