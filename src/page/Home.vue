@@ -1,6 +1,6 @@
 <template>
   <div class="zz-page">
-    <JQuerySelector/>
+    <TextareaTest/>
     <!--<H5Super/>-->
   </div>
 </template>
@@ -9,10 +9,11 @@
 import DivElementProps from '../debug/html/label/div/DivElementProps'
 import ElmSelectTest from '../debug/javascript/base/dom/selector/ElmSelectTest'
 import JQuerySelector from '../debug/javascript/frame/tools/jquery/JQuerySelector'
+import TextareaTest from '../debug/html/label/textarea/TextareaTest'
 
 export default {
   name: 'Home',
-  components: {JQuerySelector, ElmSelectTest, DivElementProps},
+  components: {TextareaTest, JQuerySelector, ElmSelectTest, DivElementProps},
   /**
    * http://localhost:8800/#/
    * http://localhost:8800/#/home

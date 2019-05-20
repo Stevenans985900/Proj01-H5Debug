@@ -8,6 +8,7 @@ const H5Super = () => import('./../debug/0/H5Super')
 const CssSuper = () => import('./../debug/css/0/CssSuper')
 // --html
 const HtmlSuper = () => import('./../debug/html/0/HtmlSuper')
+const LabelIndex = () => import('./../debug/html/label/LabelIndex')
 // --javascript
 const JsSuper = () => import('./../debug/javascript/0/JsSuper')
 const JavaScript = () => import('./../debug/javascript/base/0/JavaScript')
@@ -34,15 +35,19 @@ let router = new Router({
       path: '/H5Super',
       name: 'H5Super',
       component: H5Super
-    }, {
+    }, { // -------------------------------- CSS start --------------------------------
       path: '/H5Super/CssSuper',
       name: 'CssSuper',
       component: CssSuper
-    }, {
+    }, { // -------------------------------- HTML start --------------------------------
       path: '/H5Super/HtmlSuper',
       name: 'HtmlSuper',
       component: HtmlSuper
-    }, {
+    }, { // HTML Label index
+      path: '/html/label',
+      name: 'LabelIndex',
+      component: LabelIndex
+    }, { // -------------------------------- JavaScript start --------------------------------
       path: '/H5Super/JsSuper',
       name: 'JsSuper',
       component: JsSuper
