@@ -1,6 +1,21 @@
 <template>
   <div class="zz-page">
-    <!-- position@static -->
+    <!-- 2.position@relative定位 -->
+    <div v-if="testSate === 1" class="gl-static-box">
+      <div class="gl-item-container">
+        <div class="gl-vertical-a gl-item-common gl-color1">A</div>
+        <div class="gl-vertical-b gl-item-common gl-color2">B</div>
+        <!--<span class="gl-vertical-a gl-color1" style="display: block">A</span>-->
+        <!--<span class="gl-vertical-b gl-color2" style="display: block">B</span>-->
+      </div>
+      <!-- inline-block element -->
+      <hr>
+      <div class="gl-item-container">
+        <span class="gl-horizontal-a gl-item-common gl-color1">A</span>
+        <span class="gl-horizontal-b gl-item-common gl-color2">B</span>
+      </div>
+    </div>
+    <!-- 1.position@static定位 -->
     <div v-if="testSate === 0" class="gl-static-box">
       <div class="gl-item-container">
         <div class="gl-vertical-a gl-item-common gl-color1">A</div>
@@ -23,11 +38,11 @@ export default {
   name: 'GeneralLayout',
   data () {
     return {
-      testSate: 0 // 0(static)/1(relative)
+      testSate: 1 // 0(static)/1(relative)
     }
   },
   /**
-   * CSS position-static
+   * 1.CSS position-static
    *  一个定位为static的元素，它总是根据页面的正常文档流定位，是一种流式布局。
    *  特点：HTML标准文档流，对于inline元素自上而下，一行排满自动添加到下一。block元素自动占一行。
    *  position:
@@ -53,7 +68,7 @@ export default {
     display: inline-block;
   }
 
-  /* position:static */
+  /* 1.position:static */
   .gl-static-box {
 
   }

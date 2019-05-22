@@ -7,6 +7,7 @@ const Home = () => import('./../page/Home')
 const H5Super = () => import('./../debug/0/H5Super')
 const CssSuper = () => import('./../debug/css/0/CssSuper')
 const StyleIndex = () => import('./../debug/css/style/StyleIndex')
+const ScreenIndex = () => import('./../debug/css/solution/screen/ScreenIndex')
 // --html
 const HtmlSuper = () => import('./../debug/html/0/HtmlSuper')
 const LabelIndex = () => import('./../debug/html/label/LabelIndex')
@@ -44,6 +45,10 @@ let router = new Router({
       path: '/css/style',
       name: 'StyleIndex',
       component: StyleIndex
+    }, {
+      path: '/css/screen',
+      name: 'ScreenIndex',
+      component: ScreenIndex
     }, { // -------------------------------- HTML start --------------------------------
       path: '/H5Super/HtmlSuper',
       name: 'HtmlSuper',

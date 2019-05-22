@@ -4,7 +4,6 @@
     <div style="width: 5.4rem;height: 1rem;background: gold;font-size: 0.15rem;">REM</div>
   </div>
 </template>
-
 <script>
 export default {
   name: 'RemAdaptTest',

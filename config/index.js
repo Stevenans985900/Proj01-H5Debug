@@ -14,11 +14,11 @@ module.exports = {
 
     // Various Dev Server settings
     // 1.use scene proxy
-    host: 'localhost', // can be overwritten by process.env.HOST
+    // host: 'localhost', // can be overwritten by process.env.HOST
     // 2.use scene localhost
     // host: '127.0.0.1', // can be overwritten by process.env.HOST
     // 3.use scene web server
-    // host: '0.0.0.0', // can be overwritten by process.env.HOST
+    host: '0.0.0.0', // can be overwritten by process.env.HOST
     port: 8800, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
