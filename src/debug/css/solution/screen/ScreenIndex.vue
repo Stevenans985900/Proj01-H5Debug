@@ -7,6 +7,7 @@
 <script>
 // 桌面平台屏幕适配方案1
 import DtGeneral from './desktop/DtGeneral'
+// REM H5页面适配方案
 import RemScene from './rem/RemScene'
 export default {
   name: 'ScreenIndex',
