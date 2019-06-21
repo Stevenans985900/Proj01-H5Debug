@@ -10,6 +10,26 @@
   <!--<script src="static/js/libs/flexpage-lib.js"></script>-->
 </head>
 <body>
+<script>
+/**
+ * Rem init 10.0rem
+ */
+function pageInit () {
+  let remSum = 10.0
+
+  function adjustFontRem (ev) {
+    console.log('adjustFontRem ' + ev)
+    document.documentElement.style.fontSize = document.body.offsetWidth / remSum + 'px'
+    console.log(document.documentElement.style.fontSize)
+    console.log('devicePixelRatio ' + window.devicePixelRatio)
+  }
+
+  window.addEventListener('resize', adjustFontRem)
+  window.addEventListener('load', adjustFontRem)
+}
+
+pageInit()
+</script>
 <div id="app"></div>
 <!-- built files will be auto injected -->
 </body>
