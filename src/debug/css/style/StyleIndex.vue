@@ -1,6 +1,6 @@
 <template>
     <div class="zz-page">
-      <GeneralLayout></GeneralLayout>
+      <RandomColor></RandomColor>
     </div>
 </template>
 
@@ -8,9 +8,10 @@
 // style@position定位
 // 基本定位布局样式
 import GeneralLayout from './layout/GeneralLayout'
+import RandomColor from './color/RandomColor'
 export default {
   name: 'StyleIndex',
-  components: {GeneralLayout},
+  components: {RandomColor, GeneralLayout},
   /**
    * Router
    * ---http://localhost:8800/#/css/style

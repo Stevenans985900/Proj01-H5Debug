@@ -14,6 +14,7 @@ const LabelIndex = () => import('./../debug/html/label/LabelIndex')
 // --javascript
 const JsSuper = () => import('./../debug/javascript/0/JsSuper')
 const JavaScript = () => import('./../debug/javascript/base/0/JavaScript')
+const BaseIndex = () => import('./../debug/javascript/base/BaseIndex')
 const ForBasic = () => import('./../debug/javascript/base/statement/for/ForBasic')
 const ArrayBasic = () => import('./../debug/javascript/base/type/array/ArrayBasic')
 const ES6 = () => import('./../debug/javascript/es6/0/ES6')
@@ -61,6 +62,10 @@ let router = new Router({
       path: '/H5Super/JsSuper',
       name: 'JsSuper',
       component: JsSuper
+    }, {
+      path: '/js/base',
+      name: 'BaseIndex',
+      component: BaseIndex
     }, {
       path: '/H5Super/JsSuper/JavaScript',
       name: 'JavaScript',
