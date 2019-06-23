@@ -1,6 +1,6 @@
 <template>
   <div class="zz-page">
-    <TextareaTest></TextareaTest>
+    <ImageSrc></ImageSrc>
   </div>
 </template>
 
@@ -12,10 +12,11 @@ import DivTest from './div/DivTest'
 import DivElementProps from './div/DivElementProps'
 // -<textarea> 标签测试
 import TextareaTest from './textarea/TextareaTest'
+import ImageSrc from './image/ImageSrc'
 
 export default {
   name: 'LabelIndex',
-  components: {TextareaTest, DivTest, DivElementProps},
+  components: {ImageSrc, TextareaTest, DivTest, DivElementProps},
   /**
    * Router
    * ---http://localhost:8800/#/html/label

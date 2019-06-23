@@ -1,6 +1,6 @@
 <template>
     <div class="zz-page">
-      <RandomColor></RandomColor>
+      <TextEllipsis></TextEllipsis>
     </div>
 </template>
 
@@ -9,9 +9,10 @@
 // 基本定位布局样式
 import GeneralLayout from './layout/GeneralLayout'
 import RandomColor from './color/RandomColor'
+import TextEllipsis from './text/TextEllipsis'
 export default {
   name: 'StyleIndex',
-  components: {RandomColor, GeneralLayout},
+  components: {TextEllipsis, RandomColor, GeneralLayout},
   /**
    * Router
    * ---http://localhost:8800/#/css/style
