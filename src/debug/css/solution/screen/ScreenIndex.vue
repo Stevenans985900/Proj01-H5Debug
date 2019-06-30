@@ -1,6 +1,6 @@
 <template>
     <div class="zz-page">
-      <RemScene></RemScene>
+      <VwRemPx></VwRemPx>
     </div>
 </template>
 
@@ -9,9 +9,10 @@
 import DtGeneral from './desktop/DtGeneral'
 // REM H5页面适配方案
 import RemScene from './rem/RemScene'
+import VwRemPx from './mobile/VwRemPx'
 export default {
   name: 'ScreenIndex',
-  components: {RemScene, DtGeneral},
+  components: {VwRemPx, RemScene, DtGeneral},
   /**
    * http://localhost:8800/#/css/screen
    */
