@@ -5,10 +5,20 @@
 </template>
 
 <script>
+/* eslint-disable no-new */
+import _zlog from './common/js/utils/ZLog'
+import VConsole from 'vconsole'
 
 export default {
   name: 'App',
   components: {},
+  beforeCreate () {
+    // init vConsole
+    if (VConsole) {
+      new VConsole()
+      _zlog.log('VConsole init')
+    }
+  },
   mounted: function () {
     console.log('mounted')
   }

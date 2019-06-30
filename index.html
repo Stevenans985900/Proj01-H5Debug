@@ -8,29 +8,46 @@
   <link rel="shortcut icon" type="image/x-icon" href="static/logo/favicon.ico">
   <title>H5-Debug</title>
   <!--<script src="static/js/libs/flexpage-lib.js"></script>-->
+  <style>
+    .rem-base {
+      position: absolute;
+      width: 5rem;
+      height: 1rem;
+      background: transparent;
+    }
+  </style>
 </head>
 <body>
-<script>
-/**
- * Rem init 10.0rem
- */
-function pageInit () {
-  let remSum = 10.0
-
-  function adjustFontRem (ev) {
-    console.log('adjustFontRem ' + ev)
-    document.documentElement.style.fontSize = document.body.offsetWidth / remSum + 'px'
-    console.log(document.documentElement.style.fontSize)
-    console.log('devicePixelRatio ' + window.devicePixelRatio)
-  }
-
-  window.addEventListener('resize', adjustFontRem)
-  window.addEventListener('load', adjustFontRem)
-}
-
-pageInit()
-</script>
+<div class="rem-base"></div>
 <div id="app"></div>
 <!-- built files will be auto injected -->
+<script>
+//设置屏幕大小10rem
+var remSum = 10.0
+
+function initFontRem (ev) {
+  console.warn('event.type ' + ev.type)
+  pageRemInit(window.innerWidth)
+  var realWidth = document.querySelector('.rem-base').offsetWidth
+  console.log('realWidth ' + realWidth + 'px')
+  if (realWidth !== window.innerWidth / 2) {
+    var resizeScale = realWidth / (window.innerWidth / 2)
+    pageRemInit(window.innerWidth / resizeScale)
+    console.error('resize font-size ' + document.documentElement.style.fontSize)
+  }
+}
+
+function pageRemInit (screenWidth) {
+  document.documentElement.style.fontSize = screenWidth / remSum + 'px'
+  console.log('APP v1.0.0 ' + new Date(1561867790528))
+  console.log('window.innerWidth ' + window.innerWidth + 'px')
+  console.log('window.devicePixelRatio ' + window.devicePixelRatio)
+  console.log('font-size ' + document.documentElement.style.fontSize)
+}
+
+initFontRem({type: 'lunch'})
+window.addEventListener('resize', initFontRem)
+window.addEventListener('load', initFontRem)
+</script>
 </body>
 </html>
