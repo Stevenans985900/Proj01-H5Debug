@@ -21,7 +21,7 @@ export default {
         name: '1.标签属性',
         path: '/html/label'
       }, {
-        name: '2.标签卡片',
+        name: '2.标签盒子',
         path: '/html/label-ui'
       }]
     }

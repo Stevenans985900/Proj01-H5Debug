@@ -15,6 +15,7 @@ const HtmlSuper = () => import('./../debug/html/0/HtmlSuper')
 const LabelIndex = () => import('./../debug/html/label/LabelIndex')
 const LabelUIIndex = () => import('./../components/label-demo/LabelUIIndex')
 const IframeBoxDemo = () => import('./../components/label-demo/IframeBoxDemo')
+const ImageBoxDemo = () => import('./../components/label-demo/ImageBoxDemo')
 // --javascript
 const JsSuper = () => import('./../debug/javascript/0/JsSuper')
 const JavaScript = () => import('./../debug/javascript/base/0/JavaScript')
@@ -79,6 +80,10 @@ let router = new Router({
       path: '/html/label-ui/iframe',
       name: 'IframeBoxDemo',
       component: IframeBoxDemo
+    }, { // lable-ui@image
+      path: '/html/label-ui/image',
+      name: 'ImageBoxDemo',
+      component: ImageBoxDemo
     }, { // -------------------------------- JavaScript start --------------------------------
       path: '/js',
       name: 'JsSuper',

@@ -22,7 +22,7 @@ export default {
         path: '/html/label-ui/iframe'
       }, {
         name: '2.ImageBox',
-        path: '/page'
+        path: '/html/label-ui/image'
       }]
     }
   }
