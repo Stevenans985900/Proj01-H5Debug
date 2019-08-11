@@ -3,8 +3,9 @@ import Router from 'vue-router'
 
 // -home
 const Home = () => import('./../page/Home')
-const ZIndex = () => import('../page/Zdemo/ZIndex')
+const ZIndex = () => import('../page/ZIndex')
 const ZDemo = () => import('../page/Zdemo/ZDemo')
+const H5DevTools = () => import('../page/dev-tools/H5DevTools')
 // -web stack content
 const H5Super = () => import('./../debug/0/H5Super')
 const CssSuper = () => import('./../debug/css/0/CssSuper')
@@ -33,10 +34,12 @@ Vue.use(Router)
 let router = new Router({
   mode: 'hash',
   routes: [
+    // 重定向配置
+    // {
+    //   path: '/',
+    //   redirect: '/index'
+    // },
     {
-      path: '/',
-      redirect: '/index'
-    }, {
       path: '/index',
       name: 'ZIndex',
       component: ZIndex
@@ -44,6 +47,10 @@ let router = new Router({
       path: '/index/demo',
       name: 'ZDemo',
       component: ZDemo
+    }, {
+      path: '/index/dev-tools',
+      name: 'H5DevTools',
+      component: H5DevTools
     }, {
       path: '/home',
       name: 'Home',

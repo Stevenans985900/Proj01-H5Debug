@@ -1,19 +1,44 @@
 <template>
   <div id="app" class="zz-page">
+    <SingleList :singleList="singleList"></SingleList>
     <router-view/>
   </div>
 </template>
 
 <script>
 /* eslint-disable no-new */
+/**
+ * H5工程
+ *
+ * Router
+ * --- http://localhost:8800/#/
+ */
 import VConsole from 'vconsole'
 import APPInfo from './common/js/utils/APPInfo'
+import SingleList from './components/demo/SingleList'
 
 let isVConsoleDebug = false
 
 export default {
   name: 'App',
-  components: {},
+  components: {SingleList},
+  data () {
+    return {
+      singleList: [{
+        name: '1.H5工程',
+        path: '/index'
+      }, {
+        name: '2.CSS',
+        path: '/css'
+      }, {
+        name: '3.JavaScript',
+        path: '/js'
+      }, {
+        name: '3.HTML5',
+        path: '/html'
+      }]
+    }
+  },
   beforeCreate () {
     // init vConsole
     if (VConsole && isVConsoleDebug) {

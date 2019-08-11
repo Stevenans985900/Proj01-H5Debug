@@ -1,9 +1,8 @@
 <template>
-    <div class="zz-page">
-      <div>dev template demo</div>
-    </div>
+  <div class="zz-page">
+    <div>h5 dev tools</div>
+  </div>
 </template>
-
 <script>
 /**
  * H5工程开发工具
@@ -33,10 +32,10 @@
  * #1.NG
  *
  * Router
- * --- http://localhost:8800/#/index/demo
+ * --- http://localhost:8800/#/index/dev-tools
  */
 export default {
-  name: 'ZDemo'
+  name: 'H5DevTools'
 }
 </script>
 

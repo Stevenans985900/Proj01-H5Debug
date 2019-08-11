@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import SingleList from '../../components/demo/SingleList'
+import SingleList from '../components/demo/SingleList'
 
 /**
  * H5工程模板参考页面
@@ -13,7 +13,6 @@ import SingleList from '../../components/demo/SingleList'
  * TODO 一级卡片/二级卡片设计
  *
  * Router
- * --- http://localhost:8800/#/
  * --- http://localhost:8800/#/index
  */
 export default {
@@ -22,17 +21,11 @@ export default {
   data () {
     return {
       singleList: [{
-        name: '1.H5模板',
+        name: '1.H5工程模板',
         path: '/index/demo'
       }, {
-        name: '2.CSS',
-        path: '/css'
-      }, {
-        name: '3.JavaScript',
-        path: '/js'
-      }, {
-        name: '3.HTML5',
-        path: '/html'
+        name: '2.HTML5开发工具',
+        path: '/index/dev-tools'
       }]
     }
   }
