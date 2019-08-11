@@ -7,9 +7,9 @@
   <!--<meta name="viewport" content="initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no">-->
   <link rel="shortcut icon" type="image/x-icon" href="static/logo/favicon.ico">
   <title>H5-Debug</title>
-  <!--<script src="static/js/libs/flexpage-lib.js"></script>-->
   <style>
     .rem-base {
+      z-index: -1;
       position: absolute;
       width: 5rem;
       height: 1rem;
@@ -21,33 +21,6 @@
 <div class="rem-base"></div>
 <div id="app"></div>
 <!-- built files will be auto injected -->
-<script>
-//设置屏幕大小10rem
-var remSum = 10.0
-
-function initFontRem (ev) {
-  console.warn('event.type ' + ev.type)
-  pageRemInit(window.innerWidth)
-  var realWidth = document.querySelector('.rem-base').offsetWidth
-  console.log('realWidth ' + realWidth + 'px')
-  if (realWidth !== window.innerWidth / 2) {
-    var resizeScale = realWidth / (window.innerWidth / 2)
-    pageRemInit(window.innerWidth / resizeScale)
-    console.error('resize font-size ' + document.documentElement.style.fontSize)
-  }
-}
-
-function pageRemInit (screenWidth) {
-  document.documentElement.style.fontSize = screenWidth / remSum + 'px'
-  console.log('APP v1.0.0 ' + new Date(1561867790528))
-  console.log('window.innerWidth ' + window.innerWidth + 'px')
-  console.log('window.devicePixelRatio ' + window.devicePixelRatio)
-  console.log('font-size ' + document.documentElement.style.fontSize)
-}
-
-initFontRem({type: 'lunch'})
-window.addEventListener('resize', initFontRem)
-window.addEventListener('load', initFontRem)
-</script>
+<script src="static/js/libs/adapt-rem-d.js"></script>
 </body>
 </html>

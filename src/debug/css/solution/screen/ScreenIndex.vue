@@ -8,11 +8,10 @@
 // 桌面平台屏幕适配方案1
 import DtGeneral from './desktop/DtGeneral'
 // REM H5页面适配方案
-import RemScene from './rem/RemScene'
 import VwRemPx from './mobile/VwRemPx'
 export default {
   name: 'ScreenIndex',
-  components: {VwRemPx, RemScene, DtGeneral},
+  components: {VwRemPx, DtGeneral},
   /**
    * http://localhost:8800/#/css/screen
    */

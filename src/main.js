@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import store from './store/single/store'
 import router from './router/router'
+import VLog from './plugins/libs/VLog'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import App from './App'
@@ -14,6 +15,7 @@ Vue.config.productionTip = false
 // Bus center
 window.bus = new Vue()
 
+Vue.use(VLog)
 Vue.use(VueAxios, axios)
 
 /* eslint-disable no-new */

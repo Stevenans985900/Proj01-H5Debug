@@ -1,6 +1,7 @@
 <template>
   <div class="zz-page">
-    <ImageSrc></ImageSrc>
+    <!--<SVGTest></SVGTest>-->
+    <StaticIframe></StaticIframe>
   </div>
 </template>
 
@@ -13,10 +14,12 @@ import DivElementProps from './div/DivElementProps'
 // -<textarea> 标签测试
 import TextareaTest from './textarea/TextareaTest'
 import ImageSrc from './image/ImageSrc'
+import SVGTest from './svg/SVGTest'
+import StaticIframe from './iframe/StaticIframe'
 
 export default {
   name: 'LabelIndex',
-  components: {ImageSrc, TextareaTest, DivTest, DivElementProps},
+  components: {StaticIframe, SVGTest, ImageSrc, TextareaTest, DivTest, DivElementProps},
   /**
    * Router
    * ---http://localhost:8800/#/html/label

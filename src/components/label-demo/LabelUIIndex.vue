@@ -6,23 +6,23 @@
 
 <script>
 /**
- * H5工程@HTML
+ * H5工程@LableUI
  *
  * Router
- * --- http://localhost:8800/#/html
+ * --- http://localhost:8800/#/html/label-ui
  */
-import SingleList from '../../../components/demo/SingleList'
+import SingleList from '../demo/SingleList'
 export default {
-  name: 'HtmlSuper',
+  name: 'LabelUIIndex',
   components: {SingleList},
   data () {
     return {
       singleList: [{
-        name: '1.标签属性',
-        path: '/html/label'
+        name: '1.IframeBox',
+        path: '/html/label-ui/iframe'
       }, {
-        name: '2.标签卡片',
-        path: '/html/label-ui'
+        name: '2.ImageBox',
+        path: '/page'
       }]
     }
   }

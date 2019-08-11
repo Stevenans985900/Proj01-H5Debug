@@ -1,5 +1,7 @@
 <template>
-    <div></div>
+    <div class="zz-page">
+      NavigatorProps
+    </div>
 </template>
 
 <script>
@@ -14,6 +16,8 @@ export default {
    * ---http://blog.sina.com.cn/s/blog_6911cf140102wol1.html
    */
   mounted () {
+    console.warn(window.navigator)
+    console.log(window.navigator.userAgent)
   }
 }
 </script>

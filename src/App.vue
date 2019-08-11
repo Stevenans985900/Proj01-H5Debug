@@ -6,33 +6,37 @@
 
 <script>
 /* eslint-disable no-new */
-import _zlog from './common/js/utils/ZLog'
 import VConsole from 'vconsole'
+import APPInfo from './common/js/utils/APPInfo'
+
+let isVConsoleDebug = false
 
 export default {
   name: 'App',
   components: {},
   beforeCreate () {
     // init vConsole
-    if (VConsole) {
+    if (VConsole && isVConsoleDebug) {
       new VConsole()
-      _zlog.log('VConsole init')
+      this._zlog.log('VConsole init')
     }
   },
   mounted: function () {
-    console.log('mounted')
+    APPInfo.loggerBrowserInfo(this)
+    this._zlog.w('==================== app mounted ====================')
   }
 }
 </script>
 
 <style>
-  body,html{
+  body, html {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
   }
+
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

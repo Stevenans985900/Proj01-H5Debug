@@ -3,6 +3,8 @@ import Router from 'vue-router'
 
 // -home
 const Home = () => import('./../page/Home')
+const ZIndex = () => import('../page/Zdemo/ZIndex')
+const ZDemo = () => import('../page/Zdemo/ZDemo')
 // -web stack content
 const H5Super = () => import('./../debug/0/H5Super')
 const CssSuper = () => import('./../debug/css/0/CssSuper')
@@ -11,6 +13,8 @@ const ScreenIndex = () => import('./../debug/css/solution/screen/ScreenIndex')
 // --html
 const HtmlSuper = () => import('./../debug/html/0/HtmlSuper')
 const LabelIndex = () => import('./../debug/html/label/LabelIndex')
+const LabelUIIndex = () => import('./../components/label-demo/LabelUIIndex')
+const IframeBoxDemo = () => import('./../components/label-demo/IframeBoxDemo')
 // --javascript
 const JsSuper = () => import('./../debug/javascript/0/JsSuper')
 const JavaScript = () => import('./../debug/javascript/base/0/JavaScript')
@@ -21,6 +25,7 @@ const ES6 = () => import('./../debug/javascript/es6/0/ES6')
 const PromiseBasic = () => import('./../debug/javascript/es6/promise/PromiseBasic')
 const AsyncBasic = () => import('./../debug/javascript/es6/async/AsyncBasic')
 const ArrowFun = () => import('./../debug/javascript/es6/fun/ArrowFun')
+const ThreeIndex = () => import('./../debug/javascript/frame/threejs/ThreeIndex')
 
 Vue.use(Router)
 
@@ -29,17 +34,25 @@ let router = new Router({
   routes: [
     {
       path: '/',
-      redirect: '/home'
+      redirect: '/index'
+    }, {
+      path: '/index',
+      name: 'ZIndex',
+      component: ZIndex
+    }, {
+      path: '/index/demo',
+      name: 'ZDemo',
+      component: ZDemo
     }, {
       path: '/home',
       name: 'Home',
       component: Home
-    }, {
+    }, { // --------------------------------
       path: '/H5Super',
       name: 'H5Super',
       component: H5Super
     }, { // -------------------------------- CSS start --------------------------------
-      path: '/H5Super/CssSuper',
+      path: '/css',
       name: 'CssSuper',
       component: CssSuper
     }, {
@@ -51,15 +64,23 @@ let router = new Router({
       name: 'ScreenIndex',
       component: ScreenIndex
     }, { // -------------------------------- HTML start --------------------------------
-      path: '/H5Super/HtmlSuper',
+      path: '/html',
       name: 'HtmlSuper',
       component: HtmlSuper
     }, { // HTML Label index
       path: '/html/label',
       name: 'LabelIndex',
       component: LabelIndex
+    }, { // HTML标签组件
+      path: '/html/label-ui',
+      name: 'LabelUIIndex',
+      component: LabelUIIndex
+    }, { // lable-ui@iframe
+      path: '/html/label-ui/iframe',
+      name: 'IframeBoxDemo',
+      component: IframeBoxDemo
     }, { // -------------------------------- JavaScript start --------------------------------
-      path: '/H5Super/JsSuper',
+      path: '/js',
       name: 'JsSuper',
       component: JsSuper
     }, {
@@ -94,6 +115,10 @@ let router = new Router({
       path: '/H5Super/JsSuper/ES6/ArrowFun',
       name: 'ArrowFun',
       component: ArrowFun
+    }, {
+      path: '/js/frame/three',
+      name: 'three',
+      component: ThreeIndex
     }
   ]
 })

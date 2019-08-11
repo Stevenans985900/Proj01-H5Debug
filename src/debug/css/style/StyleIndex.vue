@@ -1,6 +1,6 @@
 <template>
     <div class="zz-page">
-      <TextEllipsis></TextEllipsis>
+      <TextGeneral></TextGeneral>
     </div>
 </template>
 
@@ -10,9 +10,10 @@
 import GeneralLayout from './layout/GeneralLayout'
 import RandomColor from './color/RandomColor'
 import TextEllipsis from './text/TextEllipsis'
+import TextGeneral from './text/TextGeneral'
 export default {
   name: 'StyleIndex',
-  components: {TextEllipsis, RandomColor, GeneralLayout},
+  components: {TextGeneral, TextEllipsis, RandomColor, GeneralLayout},
   /**
    * Router
    * ---http://localhost:8800/#/css/style
