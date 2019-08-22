@@ -27,7 +27,7 @@ export default {
   },
   /**
    * URL
-   * http://localhost:8800/#/H5Super/JsSuper/JavaScript
+   * http://localhost:8800/#/js/es5
    * Js基础-数组操作
    * for
    */

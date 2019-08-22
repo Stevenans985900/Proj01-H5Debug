@@ -8,8 +8,13 @@ const ZDemo = () => import('../page/Zdemo/ZDemo')
 const H5DevTools = () => import('../page/dev-tools/H5DevTools')
 // -web stack content
 const H5Super = () => import('./../debug/0/H5Super')
+// --css
 const CssSuper = () => import('./../debug/css/0/CssSuper')
 const StyleIndex = () => import('./../debug/css/style/StyleIndex')
+const AnimIndex = () => import('./../debug/css/style/animate/AnimIndex')
+const CSSAnimate = () => import('./../debug/css/style/animate/CSSAnimate')
+const LayoutIndex = () => import('./../debug/css/style/layout/LayoutIndex')
+const TextIndex = () => import('./../debug/css/style/text/TextIndex')
 const ScreenIndex = () => import('./../debug/css/solution/screen/ScreenIndex')
 // --html
 const HtmlSuper = () => import('./../debug/html/0/HtmlSuper')
@@ -22,6 +27,7 @@ const JsSuper = () => import('./../debug/javascript/0/JsSuper')
 const JavaScript = () => import('./../debug/javascript/base/0/JavaScript')
 const BaseIndex = () => import('./../debug/javascript/base/BaseIndex')
 const ForBasic = () => import('./../debug/javascript/base/statement/for/ForBasic')
+const TypeIndex = () => import('./../debug/javascript/base/type/TypeIndex')
 const ArrayBasic = () => import('./../debug/javascript/base/type/array/ArrayBasic')
 const ES6 = () => import('./../debug/javascript/es6/0/ES6')
 const PromiseBasic = () => import('./../debug/javascript/es6/promise/PromiseBasic')
@@ -68,6 +74,22 @@ let router = new Router({
       name: 'StyleIndex',
       component: StyleIndex
     }, {
+      path: '/css/style/anim',
+      name: 'AnimIndex',
+      component: AnimIndex
+    }, {
+      path: '/css/style/anim/sty',
+      name: 'CSSAnimate',
+      component: CSSAnimate
+    }, {
+      path: '/css/style/layout',
+      name: 'LayoutIndex',
+      component: LayoutIndex
+    }, {
+      path: '/css/style/text',
+      name: 'TextIndex',
+      component: TextIndex
+    }, {
       path: '/css/screen',
       name: 'ScreenIndex',
       component: ScreenIndex
@@ -100,7 +122,7 @@ let router = new Router({
       name: 'BaseIndex',
       component: BaseIndex
     }, {
-      path: '/H5Super/JsSuper/JavaScript',
+      path: '/js/es5',
       name: 'JavaScript',
       component: JavaScript
     }, {
@@ -108,11 +130,15 @@ let router = new Router({
       name: 'ForBasic',
       component: ForBasic
     }, {
-      path: '/H5Super/JsSuper/JavaScript/ArrayBasic',
+      path: '/js/base/type',
+      name: 'TypeIndex',
+      component: TypeIndex
+    }, {
+      path: '/js/base/type/array',
       name: 'ArrayBasic',
       component: ArrayBasic
     }, {
-      path: '/H5Super/JsSuper/ES6',
+      path: '/js/es6',
       name: 'ES6',
       component: ES6
     }, {

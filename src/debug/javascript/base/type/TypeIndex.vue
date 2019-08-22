@@ -5,28 +5,23 @@
 </template>
 
 <script>
-import SingleList from '../../../components/demo/SingleList'
 /**
- * H5工程@js
+ * H5工程@js/base/type
  *
  * Router
- * --- http://localhost:8800/#/js
+ * ---http://localhost:8800/#/js/base/type
  */
+import SingleList from '../../../../components/demo/SingleList'
 export default {
-  name: 'JsSuper',
+  name: 'TypeIndex',
   components: {SingleList},
   data () {
     return {
       singleList: [{
-        name: '1.ES5基础',
-        path: '/js/base'
-      }, {
-        name: '1.ES6特性',
-        path: '/js/es6'
+        name: '1.ES5 Array',
+        path: '/js/base/type/array'
       }]
     }
-  },
-  mounted: function () {
   }
 }
 </script>

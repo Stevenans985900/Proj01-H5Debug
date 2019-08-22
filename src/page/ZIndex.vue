@@ -5,8 +5,6 @@
 </template>
 
 <script>
-import SingleList from '../components/demo/SingleList'
-
 /**
  * H5工程模板参考页面
  * API dev@2019.08.10
@@ -15,6 +13,8 @@ import SingleList from '../components/demo/SingleList'
  * Router
  * --- http://localhost:8800/#/index
  */
+import SingleList from '../components/demo/SingleList'
+
 export default {
   name: 'ZIndex',
   components: {SingleList},

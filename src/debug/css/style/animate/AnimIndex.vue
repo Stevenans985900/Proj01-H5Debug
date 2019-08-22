@@ -6,31 +6,28 @@
 
 <script>
 /**
- * H5工程@CSS/style
+ * H5工程@CSS/style/anim
  *
  * Router
- * --- http://localhost:8800/#/css/style
+ * --- http://localhost:8800/#/css/style/anim
  */
-import SingleList from '../../../components/demo/SingleList'
+import SingleList from '../../../../components/demo/SingleList'
 export default {
-  name: 'StyleIndex',
+  name: 'AnimIndex',
   components: {SingleList},
   data () {
     return {
       singleList: [{
-        name: '1.CSS布局',
-        path: '/css/style/layout'
+        name: '1.CSS动画',
+        path: '/css/style/anim/sty'
       }, {
         name: '2.CSS文本',
-        path: '/css/style/text'
+        path: '/css'
       }, {
         name: '3.CSS动画',
-        path: '/css/style/anim'
+        path: '/js'
       }]
     }
-  },
-  mounted () {
-    console.log('mounted')
   }
 }
 </script>
