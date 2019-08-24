@@ -1,29 +1,43 @@
 <template>
   <div class="zz-page">
-    <!--<SVGTest></SVGTest>-->
-    <StaticIframe></StaticIframe>
+    <SingleList :singleList="singleList"></SingleList>
   </div>
 </template>
 
 <script>
-// HTML标签测试
-// -DIV标签
-import DivTest from './div/DivTest'
-// -DIV标签元素(Element)属性
-import DivElementProps from './div/DivElementProps'
-// -<textarea> 标签测试
-import TextareaTest from './textarea/TextareaTest'
-import ImageSrc from './image/ImageSrc'
-import SVGTest from './svg/SVGTest'
-import StaticIframe from './iframe/StaticIframe'
-
+import SingleList from '../../../components/demo/SingleList'
+/**
+ * H5工程@HTML/label
+ *
+ * Router
+ * --- http://localhost:8800/#/html/label
+ */
 export default {
   name: 'LabelIndex',
-  components: {StaticIframe, SVGTest, ImageSrc, TextareaTest, DivTest, DivElementProps},
-  /**
-   * Router
-   * ---http://localhost:8800/#/html/label
-   */
+  components: {SingleList},
+  data () {
+    return {
+      singleList: [{
+        name: '1.label@div',
+        path: '/html/label/div'
+      }, {
+        name: '2.label@iframe',
+        path: '/'
+      }, {
+        name: '3.label@image',
+        path: '/'
+      }, {
+        name: '4.label@input',
+        path: '/'
+      }, {
+        name: '5.label@svg',
+        path: '/'
+      }, {
+        name: '6.label@textarea',
+        path: '/'
+      }]
+    }
+  },
   mounted () {
     console.log('mounted')
   }

@@ -5,6 +5,8 @@ import Router from 'vue-router'
 const Home = () => import('./../page/Home')
 const ZIndex = () => import('../page/ZIndex')
 const ZDemo = () => import('../page/Zdemo/ZDemo')
+const IssuePage = () => import('../components/demo/issue/PageIssue')
+const PageIndex = () => import('../components/demo/single/PageIndex')
 const H5DevTools = () => import('../page/dev-tools/H5DevTools')
 // -web stack content
 const H5Super = () => import('./../debug/0/H5Super')
@@ -19,6 +21,10 @@ const ScreenIndex = () => import('./../debug/css/solution/screen/ScreenIndex')
 // --html
 const HtmlSuper = () => import('./../debug/html/0/HtmlSuper')
 const LabelIndex = () => import('./../debug/html/label/LabelIndex')
+const DivIndex = () => import('./../debug/html/label/div/DivIndex')
+const DivElementProps = () => import('./../debug/html/label/div/DivElementProps')
+const DivTest = () => import('./../debug/html/label/div/DivTest')
+const i01DivSpan = () => import('./../debug/html/label/div/issue/i01DivSpan')
 const LabelUIIndex = () => import('./../components/label-demo/LabelUIIndex')
 const IframeBoxDemo = () => import('./../components/label-demo/IframeBoxDemo')
 const ImageBoxDemo = () => import('./../components/label-demo/ImageBoxDemo')
@@ -46,13 +52,21 @@ let router = new Router({
     //   redirect: '/index'
     // },
     {
-      path: '/index',
+      path: '/z',
       name: 'ZIndex',
       component: ZIndex
     }, {
       path: '/index/demo',
       name: 'ZDemo',
       component: ZDemo
+    }, {
+      path: '/issue',
+      name: 'IssuePage',
+      component: IssuePage
+    }, {
+      path: '/index',
+      name: 'PageIndex',
+      component: PageIndex
     }, {
       path: '/index/dev-tools',
       name: 'H5DevTools',
@@ -101,6 +115,22 @@ let router = new Router({
       path: '/html/label',
       name: 'LabelIndex',
       component: LabelIndex
+    }, {
+      path: '/html/label/div',
+      name: 'DivIndex',
+      component: DivIndex
+    }, {
+      path: '/html/label/div/props',
+      name: 'DivElementProps',
+      component: DivElementProps
+    }, {
+      path: '/html/label/div/test',
+      name: 'DivTest',
+      component: DivTest
+    }, {
+      path: '/html/label/div/is01',
+      name: 'i01DivSpan',
+      component: i01DivSpan
     }, { // HTML标签组件
       path: '/html/label-ui',
       name: 'LabelUIIndex',
