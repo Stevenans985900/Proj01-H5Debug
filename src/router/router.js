@@ -18,6 +18,9 @@ const CSSAnimate = () => import('./../debug/css/style/animate/CSSAnimate')
 const LayoutIndex = () => import('./../debug/css/style/layout/LayoutIndex')
 const TextIndex = () => import('./../debug/css/style/text/TextIndex')
 const ScreenIndex = () => import('./../debug/css/solution/screen/ScreenIndex')
+const CssLess = () => import('./../debug/css/frame/less/CssLess.vue')
+const CssSass = () => import('./../debug/css/frame/sass/CssSass.vue')
+const CssScss = () => import('./../debug/css/frame/scss/CssScss.vue')
 // --html
 const HtmlSuper = () => import('./../debug/html/0/HtmlSuper')
 const LabelIndex = () => import('./../debug/html/label/LabelIndex')
@@ -35,7 +38,6 @@ const BaseIndex = () => import('./../debug/javascript/base/BaseIndex')
 const ForBasic = () => import('./../debug/javascript/base/statement/for/ForBasic')
 const TypeIndex = () => import('./../debug/javascript/base/type/TypeIndex')
 const ArrayBasic = () => import('./../debug/javascript/base/type/array/ArrayBasic')
-const ES6 = () => import('./../debug/javascript/es6/0/ES6')
 const PromiseBasic = () => import('./../debug/javascript/es6/promise/PromiseBasic')
 const AsyncBasic = () => import('./../debug/javascript/es6/async/AsyncBasic')
 const ArrowFun = () => import('./../debug/javascript/es6/fun/ArrowFun')
@@ -103,11 +105,28 @@ let router = new Router({
       path: '/css/style/text',
       name: 'TextIndex',
       component: TextIndex
-    }, {
+    },
+    {
       path: '/css/screen',
       name: 'ScreenIndex',
       component: ScreenIndex
-    }, { // -------------------------------- HTML start --------------------------------
+    },
+    {
+      path: '/css/frame/less',
+      name: 'CssLess',
+      component: CssLess
+    },
+    {
+      path: '/css/frame/sass',
+      name: 'CssSass',
+      component: CssSass
+    },
+    {
+      path: '/css/frame/scss',
+      name: 'CssScss',
+      component: CssScss
+    },
+    { // -------------------------------- HTML start --------------------------------
       path: '/html',
       name: 'HtmlSuper',
       component: HtmlSuper
@@ -170,7 +189,15 @@ let router = new Router({
     }, {
       path: '/js/es6',
       name: 'ES6',
-      component: ES6
+      component: () => import('./../debug/javascript/es6/0/ES6')
+    }, {
+      path: '/js/es6/class',
+      name: 'ClazzIndex',
+      component: () => import('./../debug/javascript/es6/clazz/ClazzIndex')
+    }, {
+      path: '/js/es6/class/base',
+      name: 'ClassTest',
+      component: () => import('./../debug/javascript/es6/clazz/ClassTest')
     }, {
       path: '/H5Super/JsSuper/ES6/PromiseBasic',
       name: 'PromiseBasic',

@@ -49,7 +49,10 @@ import TestCard from '../../../../../components/zui/test/TestCard'
  * 1.NG
  *
  * issue
- * #1.NG
+ * #1.span元素间距问题
+ * ---解决办法
+ * ---1.使用浮动布局
+ * ---2.使用flex布局
  *
  * Router
  * --- http://localhost:8800/#/html/label/div/is01

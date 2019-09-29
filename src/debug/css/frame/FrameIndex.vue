@@ -1,20 +1,19 @@
 <template>
-  <div class="zz-page">
-    <SingleList :singleList="singleList"></SingleList>
-  </div>
+    <div class="zz-page">
+      <SingleList :singleList="singleList"></SingleList>
+    </div>
 </template>
 
 <script>
+import SingleList from '../../../components/demo/SingleList'
 /**
- * H5工程@CSS
+ * H5工程@CSS/frame
  *
  * Router
- * --- http://localhost:8800/#/css
+ * --- http://localhost:8800/#/css/frame
  */
-import SingleList from '../../../components/demo/SingleList'
-
 export default {
-  name: 'CssSuper',
+  name: 'FrameIndex',
   components: {SingleList},
   data () {
     return {

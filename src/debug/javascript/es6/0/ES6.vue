@@ -21,7 +21,7 @@ export default {
     }
   },
   /**
-   * http://localhost:8800/#/H5Super/JsSuper/ES6
+   * http://localhost:8800/#/js/es6
    * ES6
    * blog
    * ---http://es6.ruanyifeng.com/

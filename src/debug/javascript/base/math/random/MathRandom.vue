@@ -18,6 +18,11 @@ export default {
   /**
    * js生成随机数
    * ref
+   * https://www.jb51.net/article/138648.htm
+   * https://www.jb51.net/article/69591.htm
+   * https://www.runoob.com/w3cnote/js-random.html
+   * https://www.cnblogs.com/starof/p/4988516.html
+   *
    * https://www.cnblogs.com/starof/p/4988516.html
    * https://www.runoob.com/w3cnote/js-random.html
    */
