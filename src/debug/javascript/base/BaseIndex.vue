@@ -19,8 +19,11 @@ export default {
   data () {
     return {
       singleList: [{
-        name: '1.ES5 数据类型',
+        name: '1.es5数据类型',
         path: '/js/base/type'
+      }, {
+        name: '2.Math方法',
+        path: '/js/base/array'
       }]
     }
   },
