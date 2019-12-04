@@ -1,6 +1,6 @@
 <template>
   <div class="zz-page">
-    <div class="cs02-text">SASS</div>
+    <div class="cs02-text">SASS/SCSS</div>
   </div>
 </template>
 
@@ -18,12 +18,14 @@
  * --- npm install -g scss-loader
  * --- npm install scss-loader scss --save-dev
  * --- npm install sass-loader node-sass webpack --save-dev
+ * ---配置webpack.base.conf.js scss loader
  *
  * ref:
  * --- http://sass.bootcss.com/docs/sass-reference/
  *
  * issue
  * #1.https://github.com/zhengoogle/Proj01-H5Debug/issues/1 // sass-loader version bug
+ * ---需要指定版本，v8.10.0@sass@7.3.1
  *
  * Router
  * --- http://localhost:8800/#/css/frame/scss
