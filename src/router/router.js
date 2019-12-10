@@ -16,7 +16,6 @@ const StyleIndex = () => import('./../debug/css/style/StyleIndex')
 const AnimIndex = () => import('./../debug/css/style/animate/AnimIndex')
 const CSSAnimate = () => import('./../debug/css/style/animate/CSSAnimate')
 const LayoutIndex = () => import('./../debug/css/style/layout/LayoutIndex')
-const TextIndex = () => import('./../debug/css/style/text/TextIndex')
 const ScreenIndex = () => import('./../debug/css/solution/screen/ScreenIndex')
 const CssLess = () => import('./../debug/css/frame/less/CssLess.vue')
 const CssSass = () => import('./../debug/css/frame/sass/CssSass.vue')
@@ -101,10 +100,21 @@ let router = new Router({
       path: '/css/style/layout',
       name: 'LayoutIndex',
       component: LayoutIndex
-    }, {
+    },
+    { // css@TextIndex
       path: '/css/style/text',
       name: 'TextIndex',
-      component: TextIndex
+      component: () => import('./../debug/css/style/text/TextIndex')
+    },
+    { // css@TextEllipsis
+      path: '/css/style/text/ellipsis',
+      name: 'TextEllipsis',
+      component: () => import('./../debug/css/style/text/TextEllipsis')
+    },
+    { // css@TextGeneral
+      path: '/css/style/text/general',
+      name: 'TextGeneral',
+      component: () => import('./../debug/css/style/text/TextGeneral')
     },
     {
       path: '/css/screen',
