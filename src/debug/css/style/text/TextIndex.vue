@@ -1,5 +1,7 @@
 <template>
-  <SingleList :singleList="singleList"></SingleList>
+  <div class="zz-page">
+    <SingleList :singleList="singleList"></SingleList>
+  </div>
 </template>
 
 <script>
@@ -16,14 +18,14 @@ export default {
   data () {
     return {
       singleList: [{
-        name: '1.CSS布局',
-        path: '/css/style'
+        name: '1.文本常用',
+        path: '/css/style/text/general'
       }, {
-        name: '2.CSS文本',
-        path: '/css'
+        name: '2.文本省略',
+        path: '/css/style/text/ellipsis'
       }, {
-        name: '3.CSS动画',
-        path: '/js'
+        name: '3.文本对齐',
+        path: '/css/style/text/align'
       }]
     }
   }

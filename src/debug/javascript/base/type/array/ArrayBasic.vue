@@ -26,7 +26,7 @@
  * #1.NG
  *
  * Router
- * ---http://localhost:8800/#/js/base/type/array
+ * ---http://localhost:8800/#/js/base/type/array/base
  *
  * ref
  * ---原生API

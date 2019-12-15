@@ -15,8 +15,12 @@
  * ---框架
  *
  * 场景归类
- * s01.测试场景01
+ * API
+ * s01.API场景01
+ * USE
  * u01.使用场景01
+ * Issue
+ * i01.问答场景01
  *
  * issue
  * #1.NG
@@ -34,10 +38,12 @@ export default {
   },
   mounted () {
     this.tsScene01()
+    // this.useScene01()
+    // this.ivScene01()
   },
   methods: {
     /**
-     * 测试场景01
+     * API场景01
      */
     tsScene01 () {
       console.warn('tsScene01')
@@ -47,6 +53,12 @@ export default {
      */
     useScene01 () {
       console.warn('useScene01')
+    },
+    /**
+     * 问答场景01
+     */
+    ivScene01 () {
+      console.warn('ivScene01')
     }
   }
 }

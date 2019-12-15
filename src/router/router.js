@@ -35,8 +35,6 @@ const JsSuper = () => import('./../debug/javascript/0/JsSuper')
 const JavaScript = () => import('./../debug/javascript/base/0/JavaScript')
 const BaseIndex = () => import('./../debug/javascript/base/BaseIndex')
 const ForBasic = () => import('./../debug/javascript/base/statement/for/ForBasic')
-const TypeIndex = () => import('./../debug/javascript/base/type/TypeIndex')
-const ArrayBasic = () => import('./../debug/javascript/base/type/array/ArrayBasic')
 const PromiseBasic = () => import('./../debug/javascript/es6/promise/PromiseBasic')
 const AsyncBasic = () => import('./../debug/javascript/es6/async/AsyncBasic')
 const ArrowFun = () => import('./../debug/javascript/es6/fun/ArrowFun')
@@ -106,15 +104,20 @@ let router = new Router({
       name: 'TextIndex',
       component: () => import('./../debug/css/style/text/TextIndex')
     },
+    { // css@TextGeneral
+      path: '/css/style/text/general',
+      name: 'TextGeneral',
+      component: () => import('./../debug/css/style/text/TextGeneral')
+    },
     { // css@TextEllipsis
       path: '/css/style/text/ellipsis',
       name: 'TextEllipsis',
       component: () => import('./../debug/css/style/text/TextEllipsis')
     },
-    { // css@TextGeneral
-      path: '/css/style/text/general',
-      name: 'TextGeneral',
-      component: () => import('./../debug/css/style/text/TextGeneral')
+    { // css@TextAlign
+      path: '/css/style/text/align',
+      name: 'TextEllipsis',
+      component: () => import('./../debug/css/style/text/TextAlign')
     },
     {
       path: '/css/screen',
@@ -188,15 +191,23 @@ let router = new Router({
       path: '/H5Super/JsSuper/JavaScript/ForBasic',
       name: 'ForBasic',
       component: ForBasic
-    }, {
+    },
+    { // js@TypeIndex
       path: '/js/base/type',
       name: 'TypeIndex',
-      component: TypeIndex
-    }, {
-      path: '/js/base/type/array',
+      component: () => import('./../debug/javascript/base/type/TypeIndex')
+    },
+    { // js@ArrayBasic
+      path: '/js/base/type/array/base',
       name: 'ArrayBasic',
-      component: ArrayBasic
-    }, {
+      component: () => import('./../debug/javascript/base/type/array/ArrayBasic')
+    },
+    { // js@StringTest
+      path: '/js/base/type/string/base',
+      name: 'StringTest',
+      component: () => import('./../debug/javascript/base/type/string/StringTest')
+    },
+    { // js@ES6
       path: '/js/es6',
       name: 'ES6',
       component: () => import('./../debug/javascript/es6/0/ES6')

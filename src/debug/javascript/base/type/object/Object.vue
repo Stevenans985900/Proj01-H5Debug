@@ -12,6 +12,7 @@ export default {
       key3: 3
     }
 
+    // https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object
     // 1.js获取对象的属性个数
     console.log(Object.getOwnPropertyNames(obj).length)
     console.log(Object.keys(obj).length)

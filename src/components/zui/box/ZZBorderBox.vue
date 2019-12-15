@@ -36,7 +36,13 @@ export default {
       this.borderWidth = '0.1rem'
     }
     if (this.borderColorMode === 'random') {
-      this.$refs.zbbElm.style.border = '#' + (Math.random() * 0xffffff << 0).toString(16) + ' ' + this.borderWidth + ' solid'
+      let borderColor = (Math.random() * 0xffffff << 0).toString(16)
+      while (borderColor.length < 6) {
+        borderColor = '0' + borderColor
+      }
+      let borderSty = '#' + borderColor + ' ' + this.borderWidth + ' solid'
+      // console.log(borderSty)
+      this.$refs.zbbElm.style.border = borderSty
     } else if (this.borderColor) {
       this.$refs.zbbElm.style.border = this.borderColor + ' ' + this.borderWidth + ' solid'
     }
