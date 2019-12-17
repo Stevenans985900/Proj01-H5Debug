@@ -183,11 +183,18 @@ let router = new Router({
       path: '/js/base',
       name: 'BaseIndex',
       component: BaseIndex
-    }, {
+    },
+    {
       path: '/js/es5',
       name: 'JavaScript',
       component: JavaScript
-    }, {
+    },
+    { // js@CORSSolution
+      path: '/js/solution/cors',
+      name: 'CORSSolution',
+      component: () => import('./../debug/javascript/solution/CORS/CORSSolution.vue')
+    },
+    {
       path: '/H5Super/JsSuper/JavaScript/ForBasic',
       name: 'ForBasic',
       component: ForBasic

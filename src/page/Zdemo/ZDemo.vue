@@ -1,10 +1,20 @@
 <template>
   <div class="zz-page">
-    <div>dev template demo</div>
+    <SimpleTitle :title="'dev template demo'"></SimpleTitle>
+    <!-- 1.字符串模板 -->
+    <ZZBorderBox :height="'2rem'" :marginBottom="'0.5rem'" :borderWidth="'0.1rem'"
+                 :borderColorMode="'random'">
+      <div style="font-weight: bold">1.String</div>
+      <div class="zd-str-sty1">
+        String
+      </div>
+    </ZZBorderBox>
   </div>
 </template>
 
 <script>
+import SimpleTitle from '../../components/zui/title/SimpleTitle'
+import ZZBorderBox from '../../components/zui/box/ZZBorderBox'
 /**
  * H5工程@HTML/label
  * ---
@@ -33,7 +43,7 @@
  */
 export default {
   name: 'ZDemo',
-  components: {},
+  components: {ZZBorderBox, SimpleTitle},
   created () {
   },
   mounted () {
@@ -65,5 +75,6 @@ export default {
 </script>
 
 <style scoped>
-
+  .zd-str-sty1 {
+  }
 </style>
