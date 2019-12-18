@@ -16,10 +16,8 @@ const StyleIndex = () => import('./../debug/css/style/StyleIndex')
 const AnimIndex = () => import('./../debug/css/style/animate/AnimIndex')
 const CSSAnimate = () => import('./../debug/css/style/animate/CSSAnimate')
 const LayoutIndex = () => import('./../debug/css/style/layout/LayoutIndex')
-const ScreenIndex = () => import('./../debug/css/solution/screen/ScreenIndex')
 const CssLess = () => import('./../debug/css/frame/less/CssLess.vue')
 const CssSass = () => import('./../debug/css/frame/sass/CssSass.vue')
-const CssScss = () => import('./../debug/css/frame/scss/CssScss.vue')
 // --html
 const HtmlSuper = () => import('./../debug/html/0/HtmlSuper')
 const LabelIndex = () => import('./../debug/html/label/LabelIndex')
@@ -119,10 +117,15 @@ let router = new Router({
       name: 'TextEllipsis',
       component: () => import('./../debug/css/style/text/TextAlign')
     },
-    {
-      path: '/css/screen',
+    { // css@solution/screen
+      path: '/css/solution/screen',
       name: 'ScreenIndex',
-      component: ScreenIndex
+      component: () => import('./../debug/css/solution/screen/ScreenIndex.vue')
+    },
+    { // css@solution/1px
+      path: '/css/solution/1px',
+      name: 'OnePX',
+      component: () => import('./../debug/css/solution/OnePX/OnePX.vue')
     },
     {
       path: '/css/frame/less',
@@ -137,7 +140,12 @@ let router = new Router({
     {
       path: '/css/frame/scss',
       name: 'CssScss',
-      component: CssScss
+      component: () => import('./../debug/css/frame/scss/CssScss.vue')
+    },
+    { // css@ui/super
+      path: '/css/ui/super',
+      name: 'UISuper',
+      component: () => import('./../debug/css/ui/UISuper.vue')
     },
     { // -------------------------------- HTML start --------------------------------
       path: '/html',

@@ -13,7 +13,7 @@ export default {
   name: 'ScreenIndex',
   components: {VwRemPx, DtGeneral},
   /**
-   * http://localhost:8800/#/css/screen
+   * http://localhost:8800/#/css/solution/screen
    */
   mounted: function () {
     console.log('mounted')
