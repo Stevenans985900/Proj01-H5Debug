@@ -31,7 +31,6 @@ const ImageBoxDemo = () => import('./../components/label-demo/ImageBoxDemo')
 // --javascript
 const JsSuper = () => import('./../debug/javascript/0/JsSuper')
 const JavaScript = () => import('./../debug/javascript/base/0/JavaScript')
-const BaseIndex = () => import('./../debug/javascript/base/BaseIndex')
 const ForBasic = () => import('./../debug/javascript/base/statement/for/ForBasic')
 const PromiseBasic = () => import('./../debug/javascript/es6/promise/PromiseBasic')
 const AsyncBasic = () => import('./../debug/javascript/es6/async/AsyncBasic')
@@ -187,10 +186,16 @@ let router = new Router({
       path: '/js',
       name: 'JsSuper',
       component: JsSuper
-    }, {
+    },
+    {
       path: '/js/base',
       name: 'BaseIndex',
-      component: BaseIndex
+      component: () => import('./../debug/javascript/base/BaseIndex.vue')
+    },
+    { // js@browser/window
+      path: '/js/browser/window',
+      name: 'Window',
+      component: () => import('./../debug/javascript/base/window/window/Window.vue')
     },
     {
       path: '/js/es5',
