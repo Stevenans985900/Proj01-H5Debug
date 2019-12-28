@@ -4,6 +4,13 @@ var isDebug = true
 console.warn('-------------------- screen fix start --------------------')
 
 function initFontRem (ev) {
+  // TODO
+  var scale = 1 / window.devicePixelRatio
+  var metaEl = document.createElement('meta')
+  metaEl.setAttribute('name', 'viewport')
+  scale = 0.5
+  metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no')
+
   if (isDebug) {
     console.warn('event.type ' + ev.type)
   }
