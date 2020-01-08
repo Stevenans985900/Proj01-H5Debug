@@ -15,7 +15,6 @@ const CssSuper = () => import('./../debug/css/0/CssSuper')
 const StyleIndex = () => import('./../debug/css/style/StyleIndex')
 const AnimIndex = () => import('./../debug/css/style/animate/AnimIndex')
 const CSSAnimate = () => import('./../debug/css/style/animate/CSSAnimate')
-const LayoutIndex = () => import('./../debug/css/style/layout/LayoutIndex')
 const CssLess = () => import('./../debug/css/frame/less/CssLess.vue')
 const CssSass = () => import('./../debug/css/frame/sass/CssSass.vue')
 // --html
@@ -51,50 +50,66 @@ let router = new Router({
       path: '/z',
       name: 'ZIndex',
       component: ZIndex
-    }, {
+    },
+    {
       path: '/index/demo',
       name: 'ZDemo',
       component: ZDemo
-    }, {
+    },
+    {
       path: '/issue',
       name: 'IssuePage',
       component: IssuePage
-    }, {
+    },
+    {
       path: '/index',
       name: 'PageIndex',
       component: PageIndex
-    }, {
+    },
+    {
       path: '/index/dev-tools',
       name: 'H5DevTools',
       component: H5DevTools
-    }, {
+    },
+    {
       path: '/home',
       name: 'Home',
       component: Home
-    }, { // --------------------------------
+    },
+    { // --------------------------------
       path: '/H5Super',
       name: 'H5Super',
       component: H5Super
-    }, { // -------------------------------- CSS start --------------------------------
+    },
+    { // -------------------------------- CSS start --------------------------------
       path: '/css',
       name: 'CssSuper',
       component: CssSuper
-    }, {
+    },
+    {
       path: '/css/style',
       name: 'StyleIndex',
       component: StyleIndex
-    }, {
+    },
+    {
       path: '/css/style/anim',
       name: 'AnimIndex',
       component: AnimIndex
-    }, {
+    },
+    {
       path: '/css/style/anim/sty',
       name: 'CSSAnimate',
       component: CSSAnimate
-    }, {
+    },
+    { // css@box/css-box
+      path: '/css/style/box/css-box',
+      name: 'CSSBox',
+      component: () => import('./../debug/css/style/box/CSSBox.vue')
+    },
+    {
       path: '/css/style/layout',
       name: 'LayoutIndex',
-      component: LayoutIndex
+      component: () => import('./../debug/css/style/layout/LayoutIndex')
     },
     { // css@TextIndex
       path: '/css/style/text',
