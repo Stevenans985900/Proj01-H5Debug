@@ -107,6 +107,8 @@ export default {
       // 被用来在正则表达式和字符串直接比较，然后用新的子串来替换被匹配的子串
       // 仅替换第一个
       console.log('replace', defText.replace('jpg', 'png'))
+      // 全部替换
+      console.log('replace', defText.replace(/jpg/g, 'png'))
       // 通过指定字符数返回在指定位置开始的字符串中的字符
       console.log('substr', defText.substr(3, 6))
       // 返回在字符串中指定两个下标之间的字符
