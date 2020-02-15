@@ -23,7 +23,9 @@
  * u8.数组遍历性能
  *
  * issue
- * #1.NG
+ * #1.类数组 及其 转化为数组的方法 -Uncaught TypeError: oBtnArr.forEach is not a function
+ * --- Array.from(oBtnArr)
+ * --- https://blog.csdn.net/Eva3288/article/details/104106393
  *
  * Router
  * ---http://localhost:8800/#/js/base/type/array/base

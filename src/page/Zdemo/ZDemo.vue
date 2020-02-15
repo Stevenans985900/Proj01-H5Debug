@@ -27,10 +27,15 @@ import ZZBorderBox from '../../components/zui/box/ZZBorderBox'
  * 场景归类
  * API
  * s01.API场景01
+ * @see Instance.methods.tsScene01
+ *
  * USE
  * u01.使用场景01
+ * @see Instance.methods.useScene01
+ *
  * Issue
  * i01.问答场景01
+ * @see Instance.methods.ivScene01
  *
  * issue
  * #1.NG
@@ -41,7 +46,9 @@ import ZZBorderBox from '../../components/zui/box/ZZBorderBox'
  * Ref:
  * ---
  */
-export default {
+let Instance
+console.log(Instance)
+export default Instance = {
   name: 'ZDemo',
   components: {ZZBorderBox, SimpleTitle},
   created () {
