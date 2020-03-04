@@ -246,15 +246,23 @@ let router = new Router({
       path: '/js/es6',
       name: 'ES6',
       component: () => import('./../debug/javascript/es6/0/ES6')
-    }, {
+    },
+    {
       path: '/js/es6/class',
       name: 'ClazzIndex',
       component: () => import('./../debug/javascript/es6/clazz/ClazzIndex')
-    }, {
+    },
+    {
+      path: '/js/enc/rsa',
+      name: 'RSA',
+      component: () => import('./../debug/javascript/crypto/rsa/RSA')
+    },
+    {
       path: '/js/es6/class/base',
       name: 'ClassTest',
       component: () => import('./../debug/javascript/es6/clazz/ClassTest')
-    }, {
+    },
+    {
       path: '/H5Super/JsSuper/ES6/PromiseBasic',
       name: 'PromiseBasic',
       component: PromiseBasic
