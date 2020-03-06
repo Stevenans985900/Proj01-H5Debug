@@ -4,9 +4,10 @@
 
 <script>
 import './enc/security'
+
 /**
  * http://localhost:8800/#/js/enc/rsa
-  */
+ */
 export default {
   name: 'RSA',
   mounted () {
@@ -20,7 +21,7 @@ export default {
       const rsaCode = RSAUtils.encryptedString(key, str)
       return rsaCode
     }
-    console.log(getRsaCode('123456'))
+    // console.log(getRsaCode('123456'))
   }
 }
 </script>
