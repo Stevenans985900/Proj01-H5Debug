@@ -41,6 +41,7 @@ Vue.use(Router)
 let router = new Router({
   mode: 'hash',
   routes: [
+    ...require('./modules/css-screen-route'),
     // 重定向配置
     // {
     //   path: '/',
@@ -130,11 +131,6 @@ let router = new Router({
       path: '/css/style/text/align',
       name: 'TextEllipsis',
       component: () => import('./../debug/css/style/text/TextAlign')
-    },
-    { // css@solution/screen
-      path: '/css/solution/screen',
-      name: 'ScreenIndex',
-      component: () => import('./../debug/css/solution/screen/ScreenIndex.vue')
     },
     { // css@solution/1px
       path: '/css/solution/1px',
