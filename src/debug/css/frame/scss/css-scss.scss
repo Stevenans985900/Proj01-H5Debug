@@ -1,0 +1,8 @@
+/* 变量定义 */
+// SassScript 最普遍的用法就是变量，变量以美元符号开头，赋值方法与 CSS 属性的写法一样
+// https://sass.bootcss.com/documentation/variables
+$fontColor: #CCC;
+.cs02-text {
+  font-size: 20px;
+  color: $fontColor;
+}

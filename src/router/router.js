@@ -15,8 +15,6 @@ const CssSuper = () => import('./../debug/css/0/CssSuper')
 const StyleIndex = () => import('./../debug/css/style/StyleIndex')
 const AnimIndex = () => import('./../debug/css/style/animate/AnimIndex')
 const CSSAnimate = () => import('./../debug/css/style/animate/CSSAnimate')
-const CssLess = () => import('./../debug/css/frame/less/CssLess.vue')
-const CssSass = () => import('./../debug/css/frame/sass/CssSass.vue')
 // --html
 const HtmlSuper = () => import('./../debug/html/0/HtmlSuper')
 const LabelIndex = () => import('./../debug/html/label/LabelIndex')
@@ -42,6 +40,7 @@ let router = new Router({
   mode: 'hash',
   routes: [
     ...require('./modules/css-screen-route'),
+    ...require('./modules/css-scss-route'),
     // 重定向配置
     // {
     //   path: '/',
@@ -136,21 +135,6 @@ let router = new Router({
       path: '/css/solution/1px',
       name: 'OnePX',
       component: () => import('./../debug/css/solution/OnePX/OnePX.vue')
-    },
-    {
-      path: '/css/frame/less',
-      name: 'CssLess',
-      component: CssLess
-    },
-    {
-      path: '/css/frame/sass',
-      name: 'CssSass',
-      component: CssSass
-    },
-    {
-      path: '/css/frame/scss',
-      name: 'CssScss',
-      component: () => import('./../debug/css/frame/scss/CssScss.vue')
     },
     { // css@ui/super
       path: '/css/ui/super',

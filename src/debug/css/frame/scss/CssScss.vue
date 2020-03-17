@@ -22,6 +22,7 @@
  *
  * ref:
  * --- http://sass.bootcss.com/docs/sass-reference/
+ * --- https://www.sass.hk/docs/
  *
  * issue
  * #1.https://github.com/zhengoogle/Proj01-H5Debug/issues/1 // sass-loader version bug
@@ -36,8 +37,5 @@ export default {
 </script>
 
 <style lang="scss">
-  .cs02-text {
-    font-size: 20px;
-    color: red;
-  }
+  @import "css-scss";
 </style>
