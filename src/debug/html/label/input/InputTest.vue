@@ -7,6 +7,9 @@
  * html/input
  * --- AA
  *
+ * ---修改placeholder
+ * --- https://jingyan.baidu.com/article/19192ad8eada35e53e570721.html
+ *
  * Router
  * --- http://localhost:8801/#/html/input
  *
