@@ -1,0 +1,45 @@
+// 1.(.clazz)类选择器
+.cs-root{
+  height: 60%;
+  border: #00FFFF solid 2px;
+  // 9.选择子元素
+  :nth-child(1){
+    background: #FFA500;
+  }
+  :last-child{
+    //background: #FFA500;
+  }
+  // 10.scss父选择器 &
+  &:hover{
+    background: antiquewhite;
+  }
+}
+// 2.id选择器
+#csRootChild1{
+  height: 10px;
+  border: #008000 solid 2px;
+}
+// 3.标签选择器
+div{
+ //background: #D3D3D3;
+}
+// 4.选择或
+div,p{
+  //background: #00FFFF;
+}
+// 5.选择与(后代)
+div p{
+  //background: #00FFFF;
+}
+// 6.选择与(后代)
+div>p{
+  //background: #00FFFF;
+}
+// 7.选择第一个p(后代第一个)
+div+p{
+  //background: #00FFFF;
+}
+// 8.属性选择
+[options="select"]{
+  //background: #FFA500;
+}

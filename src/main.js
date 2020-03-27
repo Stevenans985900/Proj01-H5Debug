@@ -9,6 +9,9 @@ import VueAxios from 'vue-axios'
 import App from './App'
 import './../static/css/common.css'
 import './../static/css/page-animation.css'
+import 'element-ui/lib/theme-chalk/index.css'
+import ElementUI from 'element-ui'
+import VueClipboard from 'vue-clipboard2'
 
 Vue.config.productionTip = false
 
@@ -17,6 +20,8 @@ window.bus = new Vue()
 
 Vue.use(VLog)
 Vue.use(VueAxios, axios)
+Vue.use(ElementUI)
+Vue.use(VueClipboard)
 
 /* eslint-disable no-new */
 new Vue({

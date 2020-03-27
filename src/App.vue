@@ -17,7 +17,7 @@ import VConsole from 'vconsole'
 import APPInfo from './common/js/utils/APPInfo'
 import SingleList from './components/demo/SingleList'
 
-let isVConsoleDebug = true
+let isVConsoleDebug = false
 
 export default {
   name: 'App',

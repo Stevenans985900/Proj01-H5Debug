@@ -6,3 +6,10 @@ $fontColor: #CCC;
   font-size: 20px;
   color: $fontColor;
 }
+
+/* 样式继承 */
+// https://www.sass.hk/docs/ @extend
+.cs03-text {
+  @extend .cs02-text;
+  background: red;
+}

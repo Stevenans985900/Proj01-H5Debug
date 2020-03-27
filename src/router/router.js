@@ -39,8 +39,10 @@ Vue.use(Router)
 let router = new Router({
   mode: 'hash',
   routes: [
-    ...require('./modules/css-screen-route'),
-    ...require('./modules/css-scss-route'),
+    // ...require('./modules/css-screen-route'),
+    // ...require('./modules/css-scss-route'),
+    // ...require('./modules/css-selector-route'),
+    ...require('./modules/html-label-route'),
     // 重定向配置
     // {
     //   path: '/',
