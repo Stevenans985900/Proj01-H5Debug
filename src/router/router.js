@@ -39,6 +39,7 @@ Vue.use(Router)
 let router = new Router({
   mode: 'hash',
   routes: [
+    ...require('./modules/ts-std-route'),
     // ...require('./modules/css-screen-route'),
     // ...require('./modules/css-scss-route'),
     // ...require('./modules/css-selector-route'),

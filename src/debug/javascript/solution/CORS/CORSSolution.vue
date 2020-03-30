@@ -13,7 +13,7 @@
 </template>
 
 <script>import SimpleTitle from '../../../../components/zui/title/SimpleTitle'
-import ZZBorderBox from '../../../../components/zui/box/ZZBorderBox'
+import ZZBorderBox from '../../../../components/zui/box/ZZBorderBox/ZZBorderBox'
 
 /**
  * H5工程@js/solution/cors

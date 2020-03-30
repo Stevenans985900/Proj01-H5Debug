@@ -1,20 +1,17 @@
 <template>
   <div class="zz-page">
-    <SimpleTitle :title="'1.feature 001'"></SimpleTitle>
-    <!-- 1.字符串模板 -->
+    <!-- 1.XXX -->
     <zz-border-box :height="'2rem'" :marginBottom="'0.5rem'" :borderWidth="'0.1rem'"
-                 :borderColorMode="'random'">
-      <div style="font-weight: bold">1.String</div>
-      <div class="zd-str-sty1">
+                 :borderColorMode="'random'"
+                 :title="'1.feature 001'">
+      <div class="bd-str-sty1">
         String
       </div>
     </zz-border-box>
-    <SimpleTitle :title="'2.feature 002'"></SimpleTitle>
-    <!-- 1.字符串模板 -->
-    <zz-border-box :height="'2rem'" :marginBottom="'0.5rem'" :borderWidth="'0.1rem'"
-                 :borderColorMode="'random'">
-      <div style="font-weight: bold">1.String</div>
-      <div class="zd-str-sty1">
+    <!-- 2.AAA -->
+    <zz-border-box :height="'2rem'"
+                 :title="'2.feature 002'">
+      <div class="bd-str-sty1">
         String
       </div>
     </zz-border-box>
@@ -22,14 +19,12 @@
 </template>
 
 <script>
+import SimpleTitle from '../../components/zui/title/SimpleTitle'
+
 /**
  * H5工程@HTML/label
  * ---
  *
- * ref
- * ---原生API
- * ---优质博客
- * ---框架
  *
  * 场景归类
  * API
@@ -47,19 +42,18 @@
  * issue
  * #1.NG
  *
- *
- * Ref:
- * ---
+ * ref:
+ * ---原生API
+ * ---优质博客
+ * ---框架
  *
  * Router
- * --- http://localhost:8800/#/ts/demo2
+ * --- http://localhost:8800/#/ts/demo1
  */
-import SimpleTitle from '../../components/zui/title/SimpleTitle'
-
 let Instance
 console.log(Instance)
 export default Instance = {
-  name: 'ZDemo',
+  name: 'BDemo',
   components: {SimpleTitle},
   created () {
   },
@@ -92,6 +86,6 @@ export default Instance = {
 </script>
 
 <style scoped>
-  .zd-str-sty1 {
+  .bd-str-sty1 {
   }
 </style>

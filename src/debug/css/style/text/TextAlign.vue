@@ -52,7 +52,7 @@
  * Router
  * --- http://localhost:8800/#/css/style/text/align
  */
-import ZZBorderBox from '../../../../components/zui/box/ZZBorderBox'
+import ZZBorderBox from '../../../../components/zui/box/ZZBorderBox/ZZBorderBox'
 
 export default {
   name: 'TextAlign',

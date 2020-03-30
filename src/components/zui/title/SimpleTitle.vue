@@ -23,6 +23,6 @@ export default {
    line-height: 1rem;
    font-size: 0.40rem;
    border-bottom: #EEEEEE solid 0.02rem;
-   color: #21FA2F;
+   color: #fa5403;
  }
 </style>

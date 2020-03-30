@@ -23,7 +23,7 @@
 
 <script>
 import ZZPageBox from '../../../../components/zui/box/ZZPageBox'
-import ZZBorderBox from '../../../../components/zui/box/ZZBorderBox'
+import ZZBorderBox from '../../../../components/zui/box/ZZBorderBox/ZZBorderBox'
 import SVGIcon from '../../../../components/zui/svg/SVGIcon'
 
 export default {

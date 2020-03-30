@@ -60,7 +60,7 @@
  * Router
  * --- http://localhost:8800/#/css/style/text/ellipsis
  */
-import ZZBorderBox from '../../../../components/zui/box/ZZBorderBox'
+import ZZBorderBox from '../../../../components/zui/box/ZZBorderBox/ZZBorderBox'
 
 export default {
   name: 'TextEllipsis',

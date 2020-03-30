@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import ZZBorderBox from '../../../../../components/zui/box/ZZBorderBox'
+import ZZBorderBox from '../../../../../components/zui/box/ZZBorderBox/ZZBorderBox'
 
 /**
  * H5工程@js/type/string

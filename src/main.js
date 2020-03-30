@@ -12,7 +12,7 @@ import './../static/css/page-animation.css'
 import 'element-ui/lib/theme-chalk/index.css'
 import ElementUI from 'element-ui'
 import VueClipboard from 'vue-clipboard2'
-
+import ZZBorderBox from './components/zui/box/ZZBorderBox/index'
 Vue.config.productionTip = false
 
 // Bus center
@@ -22,6 +22,7 @@ Vue.use(VLog)
 Vue.use(VueAxios, axios)
 Vue.use(ElementUI)
 Vue.use(VueClipboard)
+Vue.use(ZZBorderBox)
 
 /* eslint-disable no-new */
 new Vue({
