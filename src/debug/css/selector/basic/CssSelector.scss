@@ -1,3 +1,12 @@
+// CSS样式覆盖规则？？？
+// --- 后面添加的 < 选择越深的 < important
+
+// SCSS规则？
+
+// CSS选择器优先级
+
+// CSS选择器性能
+
 // 1.(.clazz)类选择器
 .cs-root{
   height: 60%;
@@ -31,7 +40,7 @@ div,p{
 div p{
   //background: #00FFFF;
 }
-// 6.选择与(后代)
+// 6.选择与(子后代)
 div>p{
   //background: #00FFFF;
 }

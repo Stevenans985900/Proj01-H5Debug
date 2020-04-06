@@ -9,6 +9,11 @@ const elmRoute = [
     path: '/html/label/img',
     name: 'ImageSrc',
     component: () => import('./../../debug/html/label/image/ImageSrc.vue')
+  },
+  { // svg标签
+    path: '/html/label/svg',
+    name: 'SVGTest',
+    component: () => import('./../../debug/html/label/svg/SVGTest.vue')
   }
 ]
 

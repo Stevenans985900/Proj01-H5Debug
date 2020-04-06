@@ -50,6 +50,9 @@
  * s05.首行文本缩进(text-indent)
  * s06.字符间隔(letter-spacing)
  * s07.行高(line-height)、高(height)、文本方向(direction)、背影效果(text-shadow)
+ * s08.文本多行省略
+ * --- https://www.html.cn/archives/5206
+ * ref:
  * --- http://www.divcss5.com/rumen/r129.shtml
  * u01.文本禁止选择
  * u02.文本字符转义(空格)
@@ -89,5 +92,13 @@ export default {
   .text-basic-sty2 {
     text-indent: 5vw;
     text-shadow: 1px 1px red;
+  }
+
+  .mul-text-ellipsis{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
 </style>

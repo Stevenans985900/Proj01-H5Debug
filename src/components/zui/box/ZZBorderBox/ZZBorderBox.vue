@@ -25,15 +25,15 @@ export default {
     },
     height: {
       type: String,
-      default: '2rem'
+      default: '20vw'
     },
     marginBottom: {
       type: String,
-      default: '0.5rem'
+      default: '5vw'
     },
     borderWidth: {
       type: String,
-      default: '0.1rem'
+      default: '1vw'
     },
     borderColor: {
       type: String,

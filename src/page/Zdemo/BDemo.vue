@@ -1,18 +1,12 @@
 <template>
   <div class="zz-page">
-    <!-- 1.XXX -->
-    <zz-border-box :height="'2rem'" :marginBottom="'0.5rem'" :borderWidth="'0.1rem'"
-                 :borderColorMode="'random'"
-                 :title="'1.feature 001'">
-      <div class="bd-str-sty1">
-        String
-      </div>
+    <zz-border-box :height="'20vw'"
+                   :title="'2.'">
     </zz-border-box>
-    <!-- 2.AAA -->
-    <zz-border-box :height="'2rem'"
-                 :title="'2.feature 002'">
-      <div class="bd-str-sty1">
-        String
+    <zz-border-box :height="'20vw'" :marginBottom="'5vw'" :borderWidth="'1vw'"
+                 :borderColorMode="'random'"
+                 :title="'1.'">
+      <div class="bd-ts1">
       </div>
     </zz-border-box>
   </div>
@@ -25,6 +19,8 @@ import SimpleTitle from '../../components/zui/title/SimpleTitle'
  * H5工程@HTML/label
  * ---
  *
+ * scene
+ * #s1.
  *
  * 场景归类
  * API
@@ -48,7 +44,7 @@ import SimpleTitle from '../../components/zui/title/SimpleTitle'
  * ---框架
  *
  * Router
- * --- http://localhost:8800/#/ts/demo1
+ * --- http://localhost:8801/#/ts/demo1
  */
 let Instance
 console.log(Instance)
