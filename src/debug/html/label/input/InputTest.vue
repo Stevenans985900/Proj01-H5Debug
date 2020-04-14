@@ -1,18 +1,58 @@
 <template>
   <div class="zz-page">
-    <div>
-      <button @click="onUploadEvent">选择文件</button>
-      <input type="file" multiple @change="onInputChange(this)"
-             style="display: none;"
-             ref="elmInput" accept=".png,.jpg"/>
-    </div>
-    <div>
-      <div>剪切板复制</div>
-      <span class="copy-btn"
-            v-clipboard:copy="'ABC'"
-            v-clipboard:success="onCopy"
-            v-clipboard:error="onError">复制</span>
-    </div>
+    <zz-border-box :height="'30vw'" :marginBottom="'5vw'" :borderWidth="'1vw'"
+                   :borderColorMode="'random'"
+                   :title="'4.radio单选'">
+      <div class="it-ts1">
+        <input type="radio"
+               name="radioGroup4"
+               @change="onChange4"
+               value="1"
+               ref="elmInput40"/>
+        <input type="radio"
+               name="radioGroup4"
+               @change="onChange4"
+               value="2"
+               checked
+               ref="elmInput41"/>
+      </div>
+    </zz-border-box>
+    <zz-border-box :height="'30vw'" :marginBottom="'5vw'" :borderWidth="'1vw'"
+                   :borderColorMode="'random'"
+                   :title="'3.事件'">
+      <div class="it-ts1">
+        <input type="text"
+               @change="onChange(this)"
+               @input="onInput(this)"
+               @focus="onFocus(this)"
+               @blur="onBlur(this)"
+               ref="elmInput3"/>
+      </div>
+    </zz-border-box>
+    <zz-border-box :height="'30vw'" :marginBottom="'5vw'" :borderWidth="'1vw'"
+                   :borderColorMode="'random'"
+                   :title="'2.复制剪切板'">
+      <div class="it-ts1">
+        <div>
+          <span class="copy-btn"
+                v-clipboard:copy="'ABC'"
+                v-clipboard:success="onCopy"
+                v-clipboard:error="onError">复制</span>
+        </div>
+      </div>
+    </zz-border-box>
+    <zz-border-box :height="'30vw'" :marginBottom="'5vw'" :borderWidth="'1vw'"
+                   :borderColorMode="'random'"
+                   :title="'1.选择文件'">
+      <div class="it-ts1">
+        <div>
+          <button @click="onUploadEvent">选择文件</button>
+          <input type="file" multiple @change="onInputChange(this)"
+                 style="display: none;"
+                 ref="elmInput" accept=".png,.jpg"/>
+        </div>
+      </div>
+    </zz-border-box>
   </div>
 </template>
 
@@ -38,9 +78,6 @@
  * ref:
  * --- https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input
  *
- * Router
- * --- http://localhost:8800/#/html/label/input
- *
  * issue
  * #1.input type="number"时 maxlength 属性不起作用
  * --- 规避方案：使用tel
@@ -50,6 +87,8 @@
  * --- 规避方案：动态设置elm.selectionStart
  * --- https://segmentfault.com/q/1010000011036750
  *
+ * Router
+ * --- http://localhost:8800/#/html/label/input
  */
 
 export default {
@@ -60,6 +99,30 @@ export default {
     }
   },
   methods: {
+    // -------------------------------------------4
+    onChange4 (ev) {
+      console.log('change')
+      console.log(ev.target.value)
+      console.log(this.$refs.elmInput41.checked)
+      console.log(this.$refs.elmInput41.value)
+    },
+    // -------------------------------------------3
+    onBlur (params) {
+      console.log('blur')
+      console.log(this.$refs.elmInput3.value)
+    },
+    onFocus (params) {
+      console.log('focus')
+      console.log(this.$refs.elmInput3.value)
+    },
+    onInput (params) {
+      console.log('input')
+      console.log(this.$refs.elmInput3.value)
+    },
+    onChange (params) {
+      console.log('change')
+      console.log(this.$refs.elmInput3.value)
+    },
     // 使用按钮事件触发选择文件
     // https://segmentfault.com/q/1010000008850820/a-1020000015357968
     onUploadEvent () {
@@ -82,8 +145,6 @@ export default {
 }
 </script>
 
-<style scoped>
-  .copy-btn {
-    font-size: 30px;
-  }
+<style scoped lang="scss">
+  @import "input-test.scss";
 </style>

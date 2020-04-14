@@ -40,9 +40,11 @@ let router = new Router({
   mode: 'hash',
   routes: [
     ...require('./modules/ts-std-route'),
+    // ...require('./modules/js-type-route'),
     // ...require('./modules/css-screen-route'),
     // ...require('./modules/css-scss-route'),
     // ...require('./modules/css-selector-route'),
+    // ...require('./modules/css-pos-route'),
     ...require('./modules/html-label-route'),
     // 重定向配置
     // {
@@ -209,21 +211,6 @@ let router = new Router({
       path: '/H5Super/JsSuper/JavaScript/ForBasic',
       name: 'ForBasic',
       component: ForBasic
-    },
-    { // js@TypeIndex
-      path: '/js/base/type',
-      name: 'TypeIndex',
-      component: () => import('./../debug/javascript/base/type/TypeIndex')
-    },
-    { // js@ArrayBasic
-      path: '/js/base/type/array/base',
-      name: 'ArrayBasic',
-      component: () => import('./../debug/javascript/base/type/array/ArrayBasic')
-    },
-    { // js@StringTest
-      path: '/js/base/type/string/base',
-      name: 'StringTest',
-      component: () => import('./../debug/javascript/base/type/string/StringTest')
     },
     { // js@ES6
       path: '/js/es6',

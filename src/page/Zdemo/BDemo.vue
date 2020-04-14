@@ -1,9 +1,9 @@
 <template>
   <div class="zz-page">
-    <zz-border-box :height="'20vw'"
+    <zz-border-box :height="'30vw'"
                    :title="'2.'">
     </zz-border-box>
-    <zz-border-box :height="'20vw'" :marginBottom="'5vw'" :borderWidth="'1vw'"
+    <zz-border-box :height="'30vw'" :marginBottom="'5vw'" :borderWidth="'1vw'"
                  :borderColorMode="'random'"
                  :title="'1.'">
       <div class="bd-ts1">
