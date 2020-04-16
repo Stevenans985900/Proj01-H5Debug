@@ -22,6 +22,7 @@
                    :title="'3.事件'">
       <div class="it-ts1">
         <input type="text"
+               v-model.trim="inVal3"
                @change="onChange(this)"
                @input="onInput(this)"
                @focus="onFocus(this)"
@@ -95,6 +96,7 @@ export default {
   name: 'InputTest',
   data () {
     return {
+      inVal3: '',
       fileList: []
     }
   },
@@ -118,6 +120,7 @@ export default {
     onInput (params) {
       console.log('input')
       console.log(this.$refs.elmInput3.value)
+      console.log('inVal3', this.inVal3)
     },
     onChange (params) {
       console.log('change')
