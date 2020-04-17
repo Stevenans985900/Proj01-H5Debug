@@ -41,6 +41,7 @@ let router = new Router({
   routes: [
     ...require('./modules/ts-std-route'),
     // ...require('./modules/js-type-route'),
+    // ...require('./modules/css-layout-route'),
     // ...require('./modules/css-screen-route'),
     // ...require('./modules/css-scss-route'),
     // ...require('./modules/css-selector-route'),
@@ -105,16 +106,6 @@ let router = new Router({
       path: '/css/style/anim/sty',
       name: 'CSSAnimate',
       component: CSSAnimate
-    },
-    { // css@box/css-box
-      path: '/css/style/box/css-box',
-      name: 'CSSBox',
-      component: () => import('./../debug/css/style/box/CSSBox.vue')
-    },
-    {
-      path: '/css/style/layout',
-      name: 'LayoutIndex',
-      component: () => import('./../debug/css/style/layout/LayoutIndex')
     },
     { // css@TextIndex
       path: '/css/style/text',
