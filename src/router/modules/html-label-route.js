@@ -5,6 +5,11 @@ const elmRoute = [
     name: 'InputTest',
     component: () => import('./../../debug/html/label/input/InputTest.vue')
   },
+  { // sel标签
+    path: '/html/label/select',
+    name: 'SelectTs',
+    component: () => import('./../../debug/html/label/select/SelectTs.vue')
+  },
   { // img标签
     path: '/html/label/img',
     name: 'ImageSrc',
