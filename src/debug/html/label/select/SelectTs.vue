@@ -34,6 +34,7 @@
  * Router
  * --- http://localhost:8800/#/html/label/select
  */
+
 export default {
   name: 'SelectTs',
   data () {

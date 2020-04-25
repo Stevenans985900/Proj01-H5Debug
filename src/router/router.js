@@ -40,6 +40,7 @@ let router = new Router({
   mode: 'hash',
   routes: [
     ...require('./modules/ts-std-route'),
+    ...require('./modules/ts-global-route'),
     // ...require('./modules/js-type-route'),
     // ...require('./modules/css-layout-route'),
     // ...require('./modules/css-screen-route'),
