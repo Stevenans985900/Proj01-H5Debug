@@ -1,0 +1,42 @@
+.ca-ts1 {
+  .ca-color-box {
+    display: inline-block;
+    width: 10vw;
+    height: 3vw;
+    background: #FFC0CB;
+  }
+  /* 平移动画 */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations */
+  #ts1ColorBox {
+    position: absolute;
+    left: 0;
+    -webkit-animation: moveX 2s linear 1; /* Chrome, Safari, Opera */
+    animation: moveX 2s linear 1;
+  }
+
+  /* Chrome, Safari, Opera */
+  @-webkit-keyframes moveX {
+    from {
+      left: 0vw;
+    }
+    75% {
+      left: 25vw;
+    }
+    to {
+      left: 50vw;
+    }
+  }
+
+  /* Standard syntax */
+  @keyframes moveX {
+    from {
+      left: 0vw;
+    }
+    75% {
+      left: 25vw;
+    }
+    to {
+      left: 50vw;
+    }
+  }
+}

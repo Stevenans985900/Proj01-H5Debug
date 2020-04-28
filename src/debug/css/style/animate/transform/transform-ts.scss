@@ -1,0 +1,18 @@
+.tt-ts1 {
+  .tt-color-box {
+/*    position: fixed;
+    top: 0;
+    left: 0;*/
+    display: inline-block;
+    width: 20vw;
+    height: 10vw;
+    background: #FFC0CB;
+    transition: all 1s linear 0.5s;
+  }
+
+  /* https://www.runoob.com/cssref/css3-pr-transition.html */
+  .tt-color-box-d{
+    /* 平移-(X,Y) */
+    transform: translate(50vw,0);
+  }
+}

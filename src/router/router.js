@@ -13,8 +13,6 @@ const H5Super = () => import('./../debug/0/H5Super')
 // --css
 const CssSuper = () => import('./../debug/css/0/CssSuper')
 const StyleIndex = () => import('./../debug/css/style/StyleIndex')
-const AnimIndex = () => import('./../debug/css/style/animate/AnimIndex')
-const CSSAnimate = () => import('./../debug/css/style/animate/CSSAnimate')
 // --html
 const HtmlSuper = () => import('./../debug/html/0/HtmlSuper')
 const LabelIndex = () => import('./../debug/html/label/LabelIndex')
@@ -47,7 +45,8 @@ let router = new Router({
     // ...require('./modules/css-scss-route'),
     // ...require('./modules/css-selector-route'),
     // ...require('./modules/css-pos-route'),
-    ...require('./modules/html-label-route'),
+    ...require('./modules/css-anim-route'),
+    // ...require('./modules/html-label-route'),
     // 重定向配置
     // {
     //   path: '/',
@@ -97,16 +96,6 @@ let router = new Router({
       path: '/css/style',
       name: 'StyleIndex',
       component: StyleIndex
-    },
-    {
-      path: '/css/style/anim',
-      name: 'AnimIndex',
-      component: AnimIndex
-    },
-    {
-      path: '/css/style/anim/sty',
-      name: 'CSSAnimate',
-      component: CSSAnimate
     },
     { // css@TextIndex
       path: '/css/style/text',
