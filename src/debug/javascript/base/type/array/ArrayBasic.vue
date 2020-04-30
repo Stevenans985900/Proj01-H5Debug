@@ -124,7 +124,7 @@ const tsArray = {
     // 颠倒数组中元素的顺序，修改源数据
     // console.log(tsArr01.reverse())
     // 对数组的元素进行排序，默认升序，修改源数据
-    // console.log(tsArr01.sort())
+    // console.log( tsArr01.sort((a, b) => {return a - b}) )
     // 对数组的元素进行排序，自定义，修改源数据
     // 自定义compare
     const compare = function () {

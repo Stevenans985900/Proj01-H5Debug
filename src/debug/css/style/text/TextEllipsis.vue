@@ -1,5 +1,13 @@
 <template>
   <div class="zz-page">
+    <zz-border-box :height="'30vw'"
+                   :title="'5.span单行省略'">
+      <div class="te-ts5">
+        <span class="ts5-tv text-ellipse">
+          层叠样式表(英文全称：Cascading Style Sheets)
+        </span>
+      </div>
+    </zz-border-box>
     <!-- 1.单行省略用法 -->
     <ZZBorderBox :height="'2rem'" :marginBottom="'0.5rem'" :borderWidth="'0.1rem'"
                  :borderColorMode="'random'">
@@ -70,50 +78,6 @@ export default {
 }
 </script>
 
-<style scoped>
-  .tet-ellipse-sty1 {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    /*word-break: break-all;*/
-  }
-
-  /* !兼容-IE，适用于WebKit浏览器及移动端 */
-  .tet-ellipse-sty2 {
-    text-overflow: -o-ellipsis-lastline;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
-
-  /* !兼容-IE */
-  .tet-ellipse-sty3 {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    overflow: hidden;
-  }
-
-  /* 适用范围广 */
-  .tet-ellipse-sty4 {
-    position: relative;
-    line-height: 20px;
-    max-height: 40px;
-    overflow: hidden;
-  }
-
-  .tet-ellipse-sty4::after {
-    content: "...";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding-left: 40px;
-    background: -webkit-linear-gradient(left, transparent, #fff 55%);
-    background: -o-linear-gradient(right, transparent, #fff 55%);
-    background: -moz-linear-gradient(right, transparent, #fff 55%);
-    background: linear-gradient(to right, transparent, #fff 55%);
-  }
+<style scoped lang="scss">
+ @import "text-ellipsis.scss";
 </style>
