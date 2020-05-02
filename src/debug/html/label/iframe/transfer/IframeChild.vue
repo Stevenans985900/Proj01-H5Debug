@@ -35,18 +35,15 @@
  * ---框架
  *
  * Router
- * --- http://localhost:8800/#/html/label/iframe
+ * --- http://localhost:8800/#/html/label/iframe/transfer/child
  */
 
 export default {
-  name: 'IframeTest',
+  name: 'IframeChild',
   /**
    * iframe feature
    */
   mounted () {
-    window.onChildMsg = function (msg) {
-      console.log('From child: ', msg)
-    }
   }
 }
 </script>

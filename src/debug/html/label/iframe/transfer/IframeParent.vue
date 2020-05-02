@@ -1,7 +1,7 @@
 <template>
   <div class="zz-page">
     <iframe frameborder="no" marginwidth="0" marginheight="0" class="it-iframe-sty"
-            src="http://127.0.0.1:60183/#/index"></iframe>
+            src="http://localhost:8800/#/"></iframe>
   </div>
 </template>
 
@@ -35,11 +35,11 @@
  * ---框架
  *
  * Router
- * --- http://localhost:8800/#/html/label/iframe
+ * --- http://localhost:8800/#/html/label/iframe/transfer
  */
 
 export default {
-  name: 'IframeTest',
+  name: 'IframeParent',
   /**
    * iframe feature
    */

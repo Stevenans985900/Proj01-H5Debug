@@ -45,8 +45,8 @@ let router = new Router({
     // ...require('./modules/css-scss-route'),
     // ...require('./modules/css-selector-route'),
     // ...require('./modules/css-pos-route'),
-    ...require('./modules/css-anim-route'),
-    // ...require('./modules/html-label-route'),
+    // ...require('./modules/css-anim-route'),
+    ...require('./modules/html-label-route'),
     // 重定向配置
     // {
     //   path: '/',
@@ -232,4 +232,19 @@ let router = new Router({
     }
   ]
 })
+
+router.beforeEach((to, from, next) => {
+  console.warn('global-beforeEach', to)
+  if (parent && parent.onChildMsg) {
+    parent.onChildMsg({
+      fullPath: to.fullPath,
+      path: to.path,
+      name: to.name,
+      query: to.query,
+      params: to.params
+    })
+  }
+  next() // 继续执行
+})
+
 export default router

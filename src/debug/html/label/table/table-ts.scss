@@ -1,0 +1,22 @@
+.tt-ts1{
+  .tableBox{
+    width: 100%;
+    /* 表格單元間距 */
+    //border-spacing: 0px;
+    border-collapse: collapse;
+    border: #FFA500 solid 1px;
+    tbody{
+      border: #00FFFF solid 1px;
+    }
+    tr{
+      border: #0000FF solid 1px;
+    }
+    th{
+      border: #FF0000 solid 1px;
+    }
+    td{
+      border: green solid 1px;
+      text-align: center;
+    }
+  }
+}

@@ -19,6 +19,21 @@ const elmRoute = [
     path: '/html/label/svg',
     name: 'SVGTest',
     component: () => import('./../../debug/html/label/svg/SVGTest.vue')
+  },
+  { // table标签
+    path: '/html/label/table',
+    name: 'TableTs',
+    component: () => import('./../../debug/html/label/table/TableTs.vue')
+  },
+  { // iframe标签
+    path: '/html/label/iframe/transfer',
+    name: 'IframeParent',
+    component: () => import('../../debug/html/label/iframe/transfer/IframeParent.vue')
+  },
+  { // iframe标签
+    path: '/html/label/iframe/transfer/child',
+    name: 'IframeChild',
+    component: () => import('../../debug/html/label/iframe/transfer/IframeChild.vue')
   }
 ]
 
