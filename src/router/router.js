@@ -40,6 +40,7 @@ let router = new Router({
     ...require('./modules/ts-std-route'),
     ...require('./modules/ts-global-route'),
     // ...require('./modules/js-type-route'),
+    ...require('./modules/js-math-route'),
     // ...require('./modules/css-layout-route'),
     // ...require('./modules/css-screen-route'),
     // ...require('./modules/css-scss-route'),
