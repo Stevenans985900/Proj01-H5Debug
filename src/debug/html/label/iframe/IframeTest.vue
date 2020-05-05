@@ -1,6 +1,7 @@
 <template>
   <div class="zz-page">
-    <iframe frameborder="no" marginwidth="0" marginheight="0" class="it-iframe-sty"
+    <iframe frameborder="no" marginwidth="0" marginheight="0"
+            width="100%" height="100%"
             src="http://127.0.0.1:60183/#/index"></iframe>
   </div>
 </template>
@@ -52,8 +53,4 @@ export default {
 </script>
 
 <style scoped>
-  .it-iframe-sty {
-    width: 100%;
-    height: 100%;
-  }
 </style>

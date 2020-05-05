@@ -23,6 +23,7 @@
       <div class="it-ts1">
         <input type="text"
                v-model.trim="inVal3"
+               :autofocus="true"
                @change="onChange(this)"
                @input="onInput(this)"
                @focus="onFocus(this)"
@@ -144,6 +145,12 @@ export default {
     onError (e) {
       this.$message.error('抱歉，复制失败！')
     }
+  },
+  mounted () {
+    const _self = this
+    setTimeout(() => { // 需要一定延时
+      _self.$refs.elmInput3.focus()
+    }, 500)
   }
 }
 </script>
