@@ -41,7 +41,16 @@ export default {
      */
     tsScene01 () {
       console.warn('tsScene01')
-      window.open('https://www.bing.com/')
+
+      // ！！！带查询参数重载失败
+      // 新窗口打开
+      window.open('https://www.bing.com/', '_blank')
+      // 当前页面打开
+      window.open('https://www.bing.com/', '_self')
+      // href
+      window.location.href = 'https://www.bing.com/'
+      // reload
+      window.location.reload(true)
     },
     /**
      * 使用场景01
