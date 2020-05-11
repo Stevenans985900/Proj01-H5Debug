@@ -70,6 +70,7 @@ const tsUrl = {
   useScene02 () {
     console.warn('useScene01')
 
+    // 有效
     // www.baidu.com
     function changeURLArg (url, arg, argVal) {
       var pattern = arg + '=([^&]*)'
