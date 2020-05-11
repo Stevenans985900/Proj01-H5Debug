@@ -1,7 +1,17 @@
 <template>
   <div class="zz-page">
     <div>
-      JavaScript event test page...
+      <zz-border-box :height="'30vw'"
+                     :title="'3.鼠标事件'">
+        <div
+          @mousedown="onTs3MouseDown"
+          @mousemove="onTs3MouseMove"
+          @mouseup="onTs3MouseUp"
+          @touchstart="onTs3TouchStart"
+          @touchmove="onTs3TouchMove"
+          @touchend="onTs3TouchEnd"
+          style="width: 10vw;height: 10vw;background: #FFC0CB;"></div>
+      </zz-border-box>
       <hr>
       <!-- 事件绑定 -->
       <div class="ebt-elm-sty">
@@ -24,6 +34,39 @@
 </template>
 
 <script>
+/**
+ * H5工程@HTML/label
+ * ---
+ *
+ * scene
+ * #s1.
+ *
+ * 场景归类
+ * API
+ * s01.API场景01
+ * @see bDemo.tsScene01
+ *
+ * USE
+ * u01.使用场景01
+ * @see bDemo.useScene01
+ *
+ * Issue
+ * i01.问答场景01
+ * @see bDemo.ivScene01
+ *
+ * issue
+ * #1.NG
+ *
+ * ref:
+ * ---原生API
+ * ---优质博客
+ * --- https://www.runoob.com/tags/ref-eventattributes.html // HTML事件属性
+ * ---框架
+ *
+ * Router
+ * --- http://localhost:8800/#/js/window/event
+ */
+
 import $ from 'jquery'
 export default {
   name: 'EventBaseTest',
@@ -33,6 +76,27 @@ export default {
     }
   },
   methods: {
+    // --------------------------------------------------------TS3
+    // PC测试成功
+    // desktop mouse事件/ 移动端touch事件
+    onTs3MouseDown (ev) {
+      console.log('down', ev)
+    },
+    onTs3MouseUp (ev) {
+      console.log('up', ev)
+    },
+    onTs3MouseMove (ev) {
+      console.log('move', ev)
+    },
+    onTs3TouchStart (ev) {
+      console.log('t start', ev)
+    },
+    onTs3TouchMove (ev) {
+      console.log('t move', ev)
+    },
+    onTs3TouchEnd (ev) {
+      console.log('t end', ev)
+    },
     calc (vA, vB) {
       return vA + vB
     }
@@ -58,8 +122,9 @@ export default {
    */
   mounted: function () {
     console.log('mounted')
-    testAPI05()
+    // testAPI05()
 
+    /* eslint-disable */
     /**
      * 自定义事件
      *  https://www.jb51.net/article/83911.htm
@@ -68,7 +133,7 @@ export default {
      *      https://developer.mozilla.org/zh-CN/docs/Web/API/CustomEvent
      */
     function testAPI05 () {
-      debugger
+      // debugger
       // -------------------------原生js实现-------------------------
       let event = new Event('build')
       // let obj = {};    //对象不能是普通obj
