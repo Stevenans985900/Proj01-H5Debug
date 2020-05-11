@@ -1,8 +1,16 @@
 <template>
-  <div class="zz-page">
-    <iframe frameborder="no" marginwidth="0" marginheight="0"
-            width="100%" height="100%"
-            src="http://127.0.0.1:60183/#/index"></iframe>
+  <div class="ic-page">
+    <div class="if-float">
+      <img :src="require('./../../../../assets/iv/iv_home.svg')"
+           id="goHomeElm"
+           @click="onGoHome"
+           class="ic-home"/>
+    </div>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" allowtransparency="yes"
+            width="100%" height="100%;"
+            style="position: relative;"
+            id="mIfm"
+            src="http://www.baidu.com"></iframe>
   </div>
 </template>
 
@@ -52,5 +60,47 @@ export default {
 }
 </script>
 
+<style>
+  .zz-page{
+    position: fixed;
+    overflow-y: hidden;
+  }
+</style>
+
 <style scoped>
+  .ic-page {
+    /*position: fixed;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: white;
+    overflow: hidden;
+    font-size: 0.36rem;
+  }
+
+  .it-iframe-sty {
+    width: 100%;
+    height: 100%;
+  }
+
+  .if-float {
+    position: fixed;
+    z-index: 10000;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    /*background: #FFA500;*/
+  }
+
+  .ic-home {
+    width: 100%;
+    height: 100%;
+  }
 </style>

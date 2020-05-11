@@ -26,6 +26,11 @@ const elmRoute = [
     component: () => import('./../../debug/html/label/table/TableTs.vue')
   },
   { // iframe标签
+    path: '/html/label/iframe',
+    name: 'IframeTest',
+    component: () => import('../../debug/html/label/iframe/IframeTest.vue')
+  },
+  { // iframe标签
     path: '/html/label/iframe/transfer',
     name: 'IframeParent',
     component: () => import('../../debug/html/label/iframe/transfer/IframeParent.vue')

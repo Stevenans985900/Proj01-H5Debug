@@ -3,10 +3,6 @@ import Router from 'vue-router'
 
 // -home
 const Home = () => import('./../page/Home')
-const ZIndex = () => import('../page/ZIndex')
-const ZDemo = () => import('../page/Zdemo/ZDemo')
-const IssuePage = () => import('../components/demo/issue/PageIssue')
-const PageIndex = () => import('../components/demo/single/PageIndex')
 const H5DevTools = () => import('../page/dev-tools/H5DevTools')
 // -web stack content
 const H5Super = () => import('./../debug/0/H5Super')
@@ -58,22 +54,22 @@ let router = new Router({
     {
       path: '/z',
       name: 'ZIndex',
-      component: ZIndex
+      component: () => import('../page/ZIndex')
     },
     {
       path: '/index/demo',
       name: 'ZDemo',
-      component: ZDemo
+      component: () => import('../page/Zdemo/ZDemo')
     },
     {
       path: '/issue',
       name: 'IssuePage',
-      component: IssuePage
+      component: () => import('../components/demo/issue/PageIssue')
     },
     {
       path: '/index',
       name: 'PageIndex',
-      component: PageIndex
+      component: () => import('../components/demo/single/PageIndex')
     },
     {
       path: '/index/dev-tools',
@@ -232,6 +228,15 @@ let router = new Router({
       path: '/js/frame/three',
       name: 'three',
       component: ThreeIndex
+    },
+    { // ------------------------- permission -----------------------------
+      path: '/404',
+      name: '404',
+      component: () => import('../components/error/E404.vue')
+    },
+    {
+      path: '*', // 此处需特别注意置于最底部
+      redirect: '/404'
     }
   ]
 })

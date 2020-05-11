@@ -1,7 +1,8 @@
 <template>
   <div class="zz-page">
-    <iframe frameborder="no" marginwidth="0" marginheight="0" class="it-iframe-sty"
-            src="http://localhost:8800/#/"></iframe>
+    <iframe id="mIfm"
+            frameborder="no" marginwidth="0" marginheight="0" class="it-iframe-sty"
+            src="http://127.0.0.1:11083/newmobilesite/popular/"></iframe>
   </div>
 </template>
 
@@ -47,6 +48,8 @@ export default {
     window.onChildMsg = function (msg) {
       console.log('From child: ', msg)
     }
+    // 1.点击iframe里面元素(！！！不可跨域)
+    // window.mIfm.contentDocument.getElementById('goHomeElm').click()
   }
 }
 </script>
