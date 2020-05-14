@@ -31,7 +31,7 @@ const elmRoute = [
     component: () => import('../../debug/html/label/iframe/IframeTest.vue')
   },
   { // iframe标签
-    path: '/html/label/iframe/transfer',
+    path: '/html/label/iframe/transfer/parent',
     name: 'IframeParent',
     component: () => import('../../debug/html/label/iframe/transfer/IframeParent.vue')
   },

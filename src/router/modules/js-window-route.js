@@ -3,6 +3,11 @@ const elmRoute = [
     path: '/js/window/event',
     name: 'EventBaseTest',
     component: () => import('./../../debug/javascript/base/window/event/base/EventBaseTest.vue')
+  },
+  { // window/navigator
+    path: '/js/window/navigator',
+    name: 'NavigatorProps',
+    component: () => import('./../../debug/javascript/base/window/navigator/NavigatorProps.vue')
   }
 ]
 

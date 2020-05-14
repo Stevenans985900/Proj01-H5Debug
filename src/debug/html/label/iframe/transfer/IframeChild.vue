@@ -54,6 +54,11 @@ export default {
    * iframe feature
    */
   mounted () {
+    console.log('From parent: ', parent.onChildMsg({
+      c1: '01',
+      c2: '02',
+      c3: '03'
+    }))
   }
 }
 </script>

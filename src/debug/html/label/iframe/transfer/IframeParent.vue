@@ -2,7 +2,7 @@
   <div class="zz-page">
     <iframe id="mIfm"
             frameborder="no" marginwidth="0" marginheight="0" class="it-iframe-sty"
-            src="http://127.0.0.1:11083/newmobilesite/popular/"></iframe>
+            src="http://localhost:8800/#/html/label/iframe/transfer/child"></iframe>
   </div>
 </template>
 
@@ -36,7 +36,7 @@
  * ---框架
  *
  * Router
- * --- http://localhost:8800/#/html/label/iframe/transfer
+ * --- http://localhost:8800/#/html/label/iframe/transfer/parent
  */
 
 export default {
@@ -47,6 +47,11 @@ export default {
   mounted () {
     window.onChildMsg = function (msg) {
       console.log('From child: ', msg)
+      return {
+        p1: '01',
+        p2: '02',
+        p3: '03'
+      }
     }
     // 1.点击iframe里面元素(！！！不可跨域)
     // window.mIfm.contentDocument.getElementById('goHomeElm').click()
