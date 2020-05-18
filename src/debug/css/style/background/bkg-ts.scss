@@ -1,0 +1,27 @@
+.bkg-ts1{
+  color: white;
+  .color-box1{
+    height: 8vw;
+    background-image: linear-gradient(#e66465, #9198e5);
+  }
+  .color-box2{
+    height: 8vw;
+    margin-top: 3vw;
+    background-image: linear-gradient(to right, #e66465, #9198e5);
+  }
+  .color-box3{
+    height: 8vw;
+    margin-top: 3vw;
+    background-image: linear-gradient(to bottom right, red, green, blue);
+  }
+  .color-box4 {
+    height: 8vw;
+    margin-top: 3vw;
+    background-image: linear-gradient(to right, red, green, blue);
+  }
+  .color-box5 {
+    height: 8vw;
+    margin-top: 3vw;
+    background-image: linear-gradient(-45deg, red, green, blue);
+  }
+}

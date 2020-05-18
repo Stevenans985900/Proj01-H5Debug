@@ -1,0 +1,26 @@
+.bit-ts1{
+  color: white;
+  /* 默认平铺 */
+  .color-box1{
+    height: 20vw;
+    background: url("./../../../../../assets/pic.jpg");
+    //background-image: url("./../../../../../assets/pic.jpg");
+    background-size:100% 100%;
+  }
+  .color-box2{
+    height: 8vw;
+    margin-top: 3vw;
+  }
+  .color-box3{
+    height: 8vw;
+    margin-top: 3vw;
+  }
+  .color-box4 {
+    height: 8vw;
+    margin-top: 3vw;
+  }
+  .color-box5 {
+    height: 8vw;
+    margin-top: 3vw;
+  }
+}
