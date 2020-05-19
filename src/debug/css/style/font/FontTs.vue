@@ -1,5 +1,12 @@
 <template>
-  <div>
+  <div class="zz-page">
+    <zz-border-box :height="'30vw'" :marginBottom="'5vw'" :borderWidth="'1vw'"
+                   :borderColorMode="'random'"
+                   :title="'1.字体-斜体'">
+      <div class="ft-ts1" style="font-style: italic;">
+        font-style: italic
+      </div>
+    </zz-border-box>
   </div>
 </template>
 

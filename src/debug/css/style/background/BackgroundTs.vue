@@ -1,6 +1,6 @@
 <template>
   <div class="zz-page">
-    <zz-border-box :height="'60vw'"
+    <zz-border-box :height="'80vw'"
                    :title="'1.背景渐变主要场景'">
       <div class="bkg-ts1">
         <div class="color-box1">上下渐变</div>
@@ -8,6 +8,7 @@
         <div class="color-box3">斜角渐变</div>
         <div class="color-box4">左-中-右渐变</div>
         <div class="color-box5">角度渐变</div>
+        <div class="color-box6">**样式调试**</div>
       </div>
     </zz-border-box>
   </div>

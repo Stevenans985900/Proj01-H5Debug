@@ -8,6 +8,11 @@ const elmRoute = [
     path: '/css/style/bkg/img',
     name: 'BkgImgTs',
     component: () => import('./../../debug/css/style/background/bkg-img/BkgImgTs.vue')
+  },
+  { // CSS样式-font
+    path: '/css/style/font',
+    name: 'FontTs',
+    component: () => import('./../../debug/css/style/font/FontTs.vue')
   }
 ]
 
