@@ -53,8 +53,10 @@ export default {
         p3: '03'
       }
     }
-    // 1.点击iframe里面元素(！！！不可跨域)
+    // 1.点击iframe里面元素(！！！不可跨域，！！！localhost && 127.0.0.1跨域)
+    // ！！！ iframe父子页面端口与与域名必须一致才能取到document，否则为null
     // window.mIfm.contentDocument.getElementById('goHomeElm').click()
+    // window.mIfm.contentWindow.document.getElementById('goHomeElm').click()
   }
 }
 </script>

@@ -8,6 +8,11 @@ const elmRoute = [
     path: '/js/window/navigator',
     name: 'NavigatorProps',
     component: () => import('./../../debug/javascript/base/window/navigator/NavigatorProps.vue')
+  },
+  { // window/location信息
+    path: '/js/window/location',
+    name: 'LocationTs',
+    component: () => import('./../../debug/javascript/base/window/location/LocationTs.vue')
   }
 ]
 
