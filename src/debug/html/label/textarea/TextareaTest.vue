@@ -1,14 +1,54 @@
 <template>
-  <div class="tt-box">
-    <label>
-      <textarea ref="textareaElm" placeholder="请输入" class="tt-input-sty"></textarea>
-    </label>
-    <div class="tt-get-btn">{{taValue}}</div>
+  <div class="zz-page">
+    <zz-border-box :height="'50vw'"
+                   :title="'1.textarea取值测试'">
+      <div class="tt-box">
+        <label>
+          <textarea ref="textareaElm"
+                    placeholder="请输入" class="tt-input-sty"
+                    @on-focus="onTextareaEvent('focus')"
+                    @on-blur="onTextareaEvent('blur')"></textarea>
+        </label>
+        <div class="tt-get-btn">{{taValue}}</div>
+      </div>
+    </zz-border-box>
   </div>
 </template>
 
 <script>
+/**
+ * H5工程@HTML/label
+ * ---
+ *
+ * scene
+ * #s1.
+ *
+ * 场景归类
+ * API
+ * s01.API场景01
+ * @see bDemo.tsScene01
+ *
+ * USE
+ * u01.使用场景01
+ * @see bDemo.useScene01
+ *
+ * Issue
+ * i01.问答场景01
+ * @see bDemo.ivScene01
+ *
+ * issue
+ * #1.NG
+ *
+ * ref:
+ * ---原生API
+ * ---优质博客
+ * ---框架
+ *
+ * Router
+ * --- http://localhost:8800/#/html/label/textarea
+ */
 let _self
+
 export default {
   name: 'TextareaTest',
   data () {
@@ -18,6 +58,9 @@ export default {
   },
   methods: {
     onGetTextareaValue () {
+      console.log(this.$refs.textareaElm.value)
+    },
+    onTextareaEvent () {
       console.log(this.$refs.textareaElm.value)
     }
   },

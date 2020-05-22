@@ -39,6 +39,11 @@ const elmRoute = [
     path: '/html/label/iframe/transfer/child',
     name: 'IframeChild',
     component: () => import('../../debug/html/label/iframe/transfer/IframeChild.vue')
+  },
+  { // textarea标签
+    path: '/html/label/textarea',
+    name: 'TextareaTest',
+    component: () => import('../../debug/html/label/textarea/TextareaTest.vue')
   }
 ]
 
