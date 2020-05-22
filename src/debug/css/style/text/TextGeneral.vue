@@ -1,5 +1,14 @@
 <template>
   <div class="zz-page tg-main-box">
+    <zz-border-box :height="'30vw'" :marginBottom="'5vw'" :borderWidth="'1vw'"
+                   :borderColorMode="'random'"
+                   :title="'4.文本多行省略'">
+      <div class="mul-text-ellipsis">
+        层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）
+        或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。CSS不仅可以静态地修饰网页，
+        还可以配合各种脚本语言动态地对网页各元素进行格式化。
+      </div>
+    </zz-border-box>
     <!-- 1.文本基础属性 -->
     <ZZBorderBox :height="'2rem'" :marginBottom="'0.5rem'" :borderWidth="'0.1rem'"
                  :borderColorMode="'random'">
