@@ -1,6 +1,10 @@
 <template>
   <div class="zz-page">
-    <div></div>
+    <zz-border-box :height="'60vw'"
+                   :title="'1.border-radius例子'">
+      <div class="bt-ts1">
+      </div>
+    </zz-border-box>
   </div>
 </template>
 
@@ -32,16 +36,10 @@
  * --- https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/input
  *
  * Router
- * --- http://localhost:8800/#/html/label/input
+ * --- http://localhost:8800/#/css/border/radius
  *
  * issue
- * #1.input type="number"时 maxlength 属性不起作用
- * --- 规避方案：使用tel
- * --- https://blog.csdn.net/u012982629/article/details/80588438
- *
- * #2.input文本内容动态改变后的光标位置问题
- * --- 规避方案：动态设置elm.selectionStart
- * --- https://segmentfault.com/q/1010000011036750
+ * #1.
  *
  */
 
@@ -56,5 +54,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+ @import "border-ts.scss";
 </style>
