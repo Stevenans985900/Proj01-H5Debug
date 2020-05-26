@@ -8,6 +8,11 @@ const elmRoute = [
     path: '/ts/demo2',
     name: 'ZDemo2',
     component: () => import('./../../page/Zdemo/ZDemo.vue')
+  },
+  { // 导航
+    path: '/nav',
+    name: 'NavSite',
+    component: () => import('./../../page/nav/NavSite.vue')
   }
 ]
 
